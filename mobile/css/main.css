@@ -1,0 +1,257 @@
+/* CSS Document */
+/* main area */
+.main{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+}
+.main img{
+    width:100%
+}
+.textBox{
+    position: absolute;
+    bottom:5%;
+    left:5%;
+    color:#fff;
+}
+.textBox p{
+    font-size: 2.143rem;
+    font-weight: 500;
+}
+.textBox span{
+    font-size: 1.143rem;
+}
+/* business area */
+.business{
+    width:100%;
+}
+.business img{
+    width:100%;
+}
+.business .introduce{
+    text-align: center;
+    padding:30px;
+}
+.business .introduce p{
+    font-size: 1rem;
+    color:#666;
+    margin-bottom: 20px;
+}
+.business .introduce h3 a{
+    font-size: 2.143rem;
+    font-weight: 700;
+}
+.business .gallery{
+    width:90%;
+}
+.business .gallery img{
+    border-radius: 20px;
+}
+.business .gallery dl{
+    text-align: center;
+    padding:30px 0;
+}
+.business .gallery dl dt{
+    font-size: 1.429rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.business .gallery dl dd{
+    font-size: 1.286rem;
+    color:#666;
+}
+.business .gallery dl dd:last-child{
+    border-radius: 10px;
+    background: #333;
+    width:45%;
+    margin:20px auto;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+.business .gallery dl dd a{
+    color:#fff;
+    padding:10px 5px;
+}
+/* technique area */
+.technique{
+    width:100%;
+    background: #000;
+    color:#fff;
+    text-align: center;
+    overflow: hidden;
+}
+.technique a{
+    color:#fff
+}
+.technique .introduce{
+    padding:30px
+}
+.technique .introduce p{
+    font-size: 1rem;
+    margin: 20px 0;
+    color:#999
+}
+.technique .introduce h3{
+    font-size: 2.143rem;
+    font-weight: 700;
+}
+.technique .tecImg{
+    display: block;
+    width:90%;
+    height:250px;
+    margin:0 auto;
+    background: url("../images/technique_320.png") center center no-repeat;
+    background-size: cover;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .technique .tecImg{
+        background: url("../images/technique_640.png") center center no-repeat;
+        background-size:cover;
+    }
+}
+.technique .increaseNumBox{}
+.increaseNumBox{
+    margin: 30px 0;
+    position: relative;
+}
+.increaseNumBox::before{
+    content:'';
+    display:block;
+    background:#666;
+    width:90%;
+    height:1px;
+    position: absolute;
+    top:50%;
+    left:5%
+}
+.increaseNumBox::after{
+    content:'';
+    display:block;
+    background:#666;
+    width:1px;
+    height:100%;
+    position: absolute;
+    left:50%;
+    top:0;
+}
+.increaseNumBox ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+}
+.increaseNumBox dl dt{
+    font-size: 2.143rem;
+    font-weight: 700;
+}
+.increaseNumBox dl dd{
+    font-size: 1.071rem;
+    color:#999;
+}
+.technique>a{
+    width:40%;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    background: #fff;
+    color:#333;
+    padding:10px 0;
+    font-weight: 500;
+}
+/* solution area */
+.solution{
+    width:100%;
+}
+.solution .introduce{
+    width:100%;
+    text-align: center;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+.solution .introduce h3{
+    font-size: 2.143rem;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.solution .introduce p{
+    font-size: 1rem;
+    color:#666
+}
+.solution .swiperTextBox{
+    text-align: center;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,.3);
+}
+.solution .swiperTextBox h4{
+    text-align: center;
+    color:#fff;
+    margin-top: 30px;
+    font-size: 1.786rem;
+    font-weight: 500;
+}
+.solution .swiperTextBox p{
+    color:#fff;
+    margin-top: 150px;
+    padding:0 20px;
+}
+.solution .swiperTextBox a{
+    width:40%;
+    margin: 30px auto 0;
+    border-radius: 10px;
+    background: #fff;
+    color:#333;
+    padding:10px 0;
+    font-weight: 500;
+}
+.solution .slideBar{
+    width: 80%;
+    height:5px;
+    background: #f3f3f3;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.solution .slideBar span{
+    display: block;
+    width:66.66%;
+    height:5px;
+    background: #039;
+    border-radius: 20px;
+}
+/* carrer area */
+.careerQna{
+    width:90%;
+    margin:0 auto;
+}
+.career, .qna{
+    margin-bottom: 30px;    
+}
+.careerQna h3{
+    font-size: 1.786rem;
+    font-weight: 700;
+    position: relative;
+}
+.careerQna h3::after{
+    content:'';
+    display: block;
+    width:100%;
+    height:1px;
+    background: #333;
+    /* position: absolute;
+    left:0;
+    top:0; */
+    margin:20px 0;
+}
+.careerQna p{
+    font-size: 2.143rem;
+    font-weight: 700;
+}
+.careerQna a{
+    padding:20px 0;
+    font-size: 1.286rem;
+    line-height: 2;
+}
+.careerQna a span{
+    display: block;
+    float:right;
+    font-size: 2.143rem;
+    line-height: 1;
+}

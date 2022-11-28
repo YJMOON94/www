@@ -1,0 +1,216 @@
+<? session_start() ?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#ffffff">
+<link rel="apple-touch-icon" href="./images/icons/android-chrome-512x512.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+<meta name="apple-mobile-web-app-title" content="삼성중공업">
+
+<title>삼성중공업</title>
+
+<link rel="apple-touch-icon-precomposed" href="./common/images/app_icon.png">
+<link rel="apple-touch-startup-image" href="./common/images/startup.png">
+<link rel="stylesheet" href="./common/css/common.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<link rel="stylesheet" href="./css/swiper.css">
+
+<script src="./common/js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+<script>
+  // <![CDATA[
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+  // ]]>
+ </script>
+
+</head>
+
+<body>
+    <? include "./common/main_header.html" ?>
+
+    <div class="main">
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper"> 
+                <div class="swiper-slide">
+                    <img src="./images/main01_640.png" alt="Lngship">
+                    <div class="textBox">
+                        <p>조선해양산업의 미래</p>
+                        <span>the future of the shipbuilding</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main02_640.png" alt="container craine">
+                    <div class="textBox">
+                        <p>세계 초일류를 향한 도전</p>
+                        <span>the callenge to become world class</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main03_640.png" alt="floating doc">
+                    <div class="textBox">
+                        <p>대한민국 중공업의 역사</p>
+                        <span>the history of heavy industry of korea</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>    
+       
+        <section class="business">
+            <div class="introduce">
+                <p>삼성중공업은 뛰어난 기술력과 우수한 품질을 인정받고 있습니다</p>
+                <h3><a href="#">Business</a></h3>
+            </div>
+            <div class="swiper-container swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery">
+                            <img src="./images/business01_640.png" alt="해양풍력발전기">
+                            <dl>
+                                <dt>해양사업</dt>
+                                <dd>삼성중공업은 세계최다 건조실적을 보유하고 있습니다.</dd>
+                                <dd><a href="#">learn more</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery">
+                            <img src="./images/business02_640.png" alt="컨테이너선">
+                            <dl>
+                                <dt>조선사업</dt>
+                                <dd>국내최초로 LNG를 연료로 사용해 질소산화물 배출량을 90% 감축시켰습니다.</dd>
+                                <dd><a href="#">learn more</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technique">
+            <div class="introduce">
+                <p>신기술 신공법</p>
+                <h3><a href="#">Technique</a></h3>
+                <p>제품 성능의 차별화 및 원가경쟁력 확보에 맞춰 기술개발을 추진하고 있습니다.</p>
+            </div>
+            <span class="tecImg"></span>
+            <div class="increaseNumBox">
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt class="tecNumber" data-rate="4732"></dt>
+                                <dd>인도완료 선박</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="tecNumber2" data-rate="100"></dt>
+                                <dd>에너지 재생률</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt class="tecNumber3" data-rate="72"></dt>
+                                <dd>폐기물 순환 이용률</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>+0 &#37;</dt>
+                                <dd>중대 재해율</dd>
+                            </dl>
+                        </li>
+                    </ul>
+            </div>
+            <a href="#">learn more</a>
+        </section>
+
+        <section class="solution">
+            <div class="introduce">
+                <h3><a href="#">Solution</a></h3>
+                <p>급변하는 시장 환경 속에서 다양한 고객의 요구사항을 만족시킬 수 있도록 노력합니다.</p>
+            </div>
+            <div class="swiper-container swiper3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./images/solution01_320.png)">
+                        <div class="swiperTextBox">
+                            <h4>Carbone Minimization</h4>
+                            <p>삼성중공업은 EEXI/CII 규제 대응을 위하여 스마트 엔진 출력 제한 시스템(SSPL)을 개발하였습니다.</p>
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./images/solution02_320.png)">
+                        <div class="swiperTextBox">
+                            <h4>Ship autopilot</h4>
+                            <p>다양한 선박의 설계 경험을 기반으로 협업 조선소에 맞춤형 설계도면을 제공합니다.</p>
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./images/solution03_320.png)">
+                        <div class="swiperTextBox">
+                            <h4>Ship building</h4>
+                            <p>항법지원시스템으로 하나의 시스템에 멀티 기능을 통합해 비숙련 작업자도 안전하게 항해할 수 있도록 합니다.</p>
+                            <a href="#">learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <section class="careerQna">
+            <div class="career">
+                <h3>Career</h3>
+                <p>채용 지원하기</p>
+                <a href="#">career@samsungshi.com<span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+            </div>
+            <div class="qna">
+                <h3>Qna</h3>
+                <p>문의사항</p>
+                <a href="#">career@samsungshi.com<span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+            </div>
+        </section>
+
+
+
+
+
+
+    </article>
+
+    <? include "./common/main_footer.html" ?>
+  </div>
+ 
+ <script src="./common/js/jquery-1.12.4.min.js"></script>
+ <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+ <script src="./common/js/nav.js"></script>
+ <script src="./js/swiper.min.js"></script>
+ <script src="./js/swiper.js"></script>
+ <script src="./js/newSwiper.js"></script>
+ <script src="./js/scroll.js"></script>
+ <script src="./common/js/topFamily.js"></script>
+ <script src="./common/js/pageSelect.js"></script>
+ <script>
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('./service_worker.js')
+      .then(function () {
+        console.log('서비스 워커가 등록됨!');
+      })
+  }
+ </script>
+</body>
+</html>

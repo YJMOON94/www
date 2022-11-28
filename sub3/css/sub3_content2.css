@@ -1,0 +1,98 @@
+.contentArea h4{
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+}
+.contentArea h4::after{
+    content:'';
+    display: block;
+    position: absolute;
+    width:250px;
+    height:3px;
+    background: #039;
+    left: 350px;
+    top:30px;
+    transform: scaleX(.05);
+    transform-origin: left;
+    transition: all .3s ease-out;
+}
+.contentArea h4:hover::after{
+    transform: scaleX(1);
+}
+.midTitle{
+    margin-bottom: 100px;
+    margin-left: 60px;
+}
+.midTitle img{
+    width:150px;
+    height:150px;
+}
+.tec1, .tec2{
+    width:1000px;
+    margin:0 100px 80px 100px;
+    overflow:hidden;
+}
+.tec1 ul, .tec2 ul{
+    overflow:hidden;
+    position: relative;
+    padding: 0 30px 20px 30px;
+}
+.tec1 ul::after{
+    position: absolute;
+    content:'ENERGY';
+    display: block;
+    writing-mode: vertical-rl;
+    color:rgba(0,0,0,.1);
+    font-size: 30em;
+    right:-150px;
+    top:130px;
+    z-index: 0;
+}
+.tec1 li{
+    position: relative;
+    z-index: 1;
+}
+.tec1 img, .tec2 img{
+    position: relative;
+    width:400px;
+    height:600px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    z-index: 1;
+}
+.tec1 li, .tec2 li{
+    float:left;
+    padding:30px;
+    transition: all .3s ease-out;
+}
+.tec1 li:hover, .tec2 li:hover{
+    background: #eee;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+}
+.tec1 li:nth-of-type(2){
+    margin-top: 500px;
+    float:right
+}
+.tec1 li:nth-of-type(3){
+    margin-top: 200px;
+}
+.tec2 ul li{
+    float:left
+}
+.tec2 ul li:nth-of-type(2){
+    float:right;
+}
+.contentArea dl{
+    text-align: justify;
+    width:400px;
+}
+.contentArea dt{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 30px 0;
+    color:#06c
+}
+.contentArea dd{
+    font-size: 1.25em;
+}

@@ -1,0 +1,103 @@
+{
+    "animals" : [
+        {
+            "title" : "Fox",
+            "subtitle" : "other name : arctic fox",
+            "content" : "Characteristic : Arctic foxes must endure a temperature difference of up to 90–100 °C (160–180 °F) between the external environment and their internal core temperature."
+        },
+        {
+            "title" : "Dolphin",
+            "subtitle" : "other name : see Dolphin",
+            "content" : "Characteristic : A dolphin is an aquatic mammal within the infraorder Cetacea. Dolphin species belong to the families Delphinidae."
+        },
+        {
+            "title" : "Owl",
+            "subtitle" : "other name : see Owl",
+            "content" : "Characteristic : Owls are birds from the order Strigiformes, which includes over 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance."
+        },
+        {
+            "title" : "Cat",
+            "subtitle" : "other name : see Cat",
+            "content" : "The cat (Felis catus) is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is commonly referred to as the domestic cat or house cat to distinguish it from the wild members of the family."
+        },
+        {
+            "title" : "Tiger",
+            "subtitle" : "other name : see Tiger and Tigress ",
+            "content" : "Characteristic : Characteristic : The tiger is the largest living cat species and a member of the genus Panthera. It is most recognisable for its dark vertical stripes on orange fur with a white underside. An apex predator."
+        },
+        {
+            "title" : "Penguin",
+            "subtitle" : "other name : see Penguin",
+            "content" : "Characteristic : Penguins (order Sphenisciformes, family Spheniscidae are a group of aquatic flightless birds."
+        },
+        {
+            "title" : "Squirrel",
+            "subtitle" : "other name : see Squirrel",
+            "content" : "Characteristic : Squirrels are members of the family Sciuridae, a family that includes small or medium-size rodents.."
+        }
+    ],
+    "mainURL" : [
+        {
+            "url": "https://www.youtube.com/embed/FK3dav4bA4s"
+        },
+        {
+            "url": "https://www.youtube.com/embed/rTEL0dYFKvg"
+        },
+        {
+            "url": "https://www.youtube.com/embed/IrmT2WlRSrU"
+        }
+    ],
+    "lionURL" : [
+        {
+            "url": "https://www.youtube.com/embed/FK3dav4bA4s"
+        },
+        {
+            "url": "https://www.youtube.com/embed/OMkEVX23BdM"
+        },
+        {
+            "url": "https://www.youtube.com/embed/gMo0zscDezo"
+        }
+    ],
+    "whaleURL" : [
+        {
+            "url": "https://www.youtube.com/embed/rTEL0dYFKvg"
+        },
+        {
+            "url": "https://www.youtube.com/embed/K0_h3AAn7Pk"
+        },
+        {
+            "url": "https://www.youtube.com/embed/85efuFwCWDg"
+        }
+    ],
+    "penguinURL" : [
+        {
+            "url": "https://www.youtube.com/embed/IrmT2WlRSrU"
+        },
+        {
+            "url": "https://www.youtube.com/embed/wwH3fygSNVU"
+        },
+        {
+            "url": "https://www.youtube.com/embed/Es4q6NOtuhc"
+        }
+    ],
+    "videoText" : [
+        {
+            "title" : "Lions",
+            "content1":"White Lion was an American glam metal band that was formed in",
+            "content2":"New York City in 1983 by Danish vocalist and guitarist Mike",
+            "content3":"Tramp and American guitarist Vito Bratta."
+        },
+        {
+            "title" : "Whales",
+            "content1":"Whales are a widely distributed and diverse group of fully",
+            "content2":"aquatic placental marine mammals.",
+            "content3":"As an informal and colloquial grouping"
+        },
+        {
+            "title" : "Penguins",
+            "content1":"Penguins order Sphenisciformes, family Spheniscidae are",
+            "content2":"a group of aquatic flightless birds.",
+            "content3":"Highly adapted for life in the water"
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+.titleArea{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.titleArea h2{
+    font-size: 1.786rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.titleArea dl{
+    padding:0 20px
+}
+.titleArea dl dt{
+    font-size: 1.429rem;
+    margin-bottom: 20px;
+}
+.titleArea dl dd{
+    color: #999
+}
+.conTop{
+    width:100%;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    font-size: 1.429rem;
+    font-weight: 500;
+    text-align: center;
+    margin:0 auto;
+}
+.conTop ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.conTop ul li{
+    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.conTop ul li a{
+    padding: 10px 0;
+}
+.conTop ul li a:hover{
+    color:#039
+}
+.conTab{
+    transition: all .3s ease-out;
+}
+.conTopOn{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(33,100,200,.9);
+    z-index: 100;
+}
+.conTopOn .conTop ul li{
+    border:none;
+}
+.conTopOn .conTop ul li a{
+    color:#fff;
+    transition: all .3s ease-out;
+}
+.conTopOn .conTop ul li a.onSelect{
+    background:#fff;
+    color:#039;
+}
+/* 이미지 */
+.conBtm>ul>li>ul>li{
+    position: relative;
+    width:100%;
+}
+.conBtm ul li img{
+    width:100%;
+}
+.year2000, .year2010, .year2019, .year2022{
+    margin-top: 50px;
+}
+.year2000{
+    margin-bottom: 50px;
+}
+.blueBox{
+    width:60%;
+    padding:20px 20px;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(00,33,99,1), rgba(33,66,200,.9));
+    position: absolute;
+    bottom:-50px;
+    left:0;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+}
+.contentArea h3{
+    color:#fff;
+    font-size: 1.429rem;
+    position: relative;
+}
+.contentArea p{
+    color:#fff;
+}
+.contentArea h3::before{
+    content:'samsung heavy industry';
+    display: block;
+    opacity: .5;
+    font-size: 1rem;
+}
+.conBtm .textBox{
+    padding:80px 0 0 30px;
+}
+.conBtm .textBox dt{
+    font-size: 1.429rem;
+    color:#06c;
+    margin-bottom: 30px;
+}
+.conBtm .textBox dd{
+    line-height: 2;
+    position: relative;
+}
+.conBtm .textBox dd::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    left: -5px;
+    width:2px;
+    height:5px;
+    background: #039;
+    transform: rotate(45deg);
+}

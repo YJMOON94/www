@@ -1,0 +1,194 @@
+@keyframes mainAni{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+.main{
+    position: relative;
+    left:50%;
+    margin-left: -1000px;
+    width:2000px;
+    overflow:hidden
+}
+.main img{
+    animation: mainAni 10s ease-out infinite alternate;
+}
+.main h3{
+    font-size: 2.2em;
+    color:#fff;
+    position:absolute;
+    font-weight: 400;
+    left:50%;
+    top:300px;
+    margin-left: -60.9px;
+}
+.subNav{
+    border-bottom: 1px solid #dfdfdf;
+    overflow: hidden;
+}
+.subNav ul{
+    width:900px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.subNav ul li{
+    float:left;
+    width:300px;
+    text-align: center;
+}
+.subNav ul li a{
+    display: block;
+    padding:20px 0;
+    font-size: 1.250em;
+    font-weight: 500;
+    transition: all .3s ease-out;
+}
+.subNav ul li a:hover{
+    color:#039
+}
+.subNav ul li .current{
+    color:#039
+}
+#content .titleArea{
+    width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+}
+#content .titleArea .lineMap{
+    margin:30px 0 0 950px;
+    color:#999
+}
+#content .titleArea .lineMap strong{
+    color:#666;
+} 
+#content .titleArea h2{
+    position: relative;
+    font-size: 3.125em;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px 0 150px 0;
+}
+#content .titleArea h2::after{
+    content:'';
+    display: block;
+    position:absolute;
+    left:50%;
+    top:120px;
+    width:1px;
+    height:60px;
+    background: #039;
+}
+.titleArea dl{
+    text-align: center;
+    color:#666
+}
+.titleArea dl dt{
+    font-size: 1.875em;
+    font-weight: 400;
+}
+.titleArea dl dd{
+    margin: 50px 0 100px 0;
+    color:#999;
+    font-size: 1.2em;
+}
+.contentArea{
+    width:1200px;
+    margin:0 auto;
+}
+.conTop{
+    width:1200px;
+    border:1px solid #ccc;
+    font-size: 1.563em;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+}
+.conTop ul{
+    overflow:hidden;
+}
+.conTop ul li{
+    float:left;
+    width:33%;
+    border-right: 1px solid #ccc;
+}
+.conTop ul li:last-child{
+    border:none;
+}
+.conTop ul li a{
+    padding: 30px 0;
+}
+.conTop ul li a:hover{
+    color:#039
+}
+.conTopOn{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(33,100,200,.9);
+    z-index: 100;
+}
+.conTopOn .conTop{
+    border:0;
+}
+.conTopOn .conTop ul li{
+    border:none;
+}
+.conTopOn .conTop ul li a{
+    color:#fff;
+    transition: all .3s ease-out;
+}
+.conTopOn .conTop ul li a:hover{
+    background: #fff;
+    color:#039;
+}
+.conTopOn .conTop ul li a.onSelect{
+    background:#fff;
+    color:#039;
+}
+.year{
+    height:400px;
+    width:2000px;
+    margin-left: -1000px;
+    background: url(../images/sub3_01.jpg)0 0 no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    filter:grayscale(.5);
+    position: relative;
+    left:50%;
+    top:0;
+    transition: all .5s ease-out;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.year ul{
+    width:300px;
+    height:300px;
+    border-radius:300px;
+    background: #fff;
+    color:#039;
+    position: absolute;
+    left:50%;
+    top:50px;
+    margin-left:-150px;
+    transition: all .5s ease-out;
+}
+.year:hover{
+    filter: grayscale(0);
+}
+.year:hover ul{
+    background: rgba(0,0,0,.3);
+    color:#fff;
+}
+.year ul li{
+    text-align: center;
+    margin-top: 65px;
+    font-size: 2em;
+    font-weight: 700;
+}
+.year ul li:last-child{
+    font-size: 2.5em;
+}

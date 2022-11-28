@@ -1,0 +1,103 @@
+/* 서브1페이지 공통 영역 */
+@keyframes mainAni{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+.main{
+    position: relative;
+    left:50%;
+    margin-left: -1000px;
+    width:2000px;
+    overflow:hidden;
+}
+.main img{
+    animation: mainAni 10s ease-out infinite alternate;
+}
+.main h3{
+    font-size: 2.2em;
+    color:#fff;
+    position:absolute;
+    font-weight: 400;
+    left:50%;
+    top:300px;
+    margin-left: -80px;
+}
+.subNav{
+    border-bottom: 1px solid #dfdfdf;
+    overflow: hidden;
+}
+.subNav ul{
+    width:1200px;
+    margin:0 auto
+}
+.subNav ul li{
+    float:left;
+    width:300px;
+    text-align: center;
+    transition: all .3s ease-out;
+    border-radius: 50px;
+}
+.subNav ul li a{
+    display: block;
+    padding:20px 0;
+    font-size: 1.250em;
+    font-weight: 500;
+    transition: all .3s ease-out;
+}
+.subNav ul li a:hover{
+    color:#fff
+}
+.subNav ul li:hover{
+    background: #039;
+}
+.subNav ul li .current{
+    color:#039
+}
+#content{
+    width:1200px;
+    margin:0 auto;
+}
+#content .titleArea{
+    overflow: hidden;
+}
+#content .titleArea .lineMap{
+    margin:30px 0 0 950px;
+    color:#999
+}
+#content .titleArea .lineMap strong{
+    color:#666;
+} 
+#content .titleArea h2{
+    position: relative;
+    font-size: 3.125em;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px 0 150px 0;
+}
+#content .titleArea h2::after{
+    content:'';
+    display: block;
+    position:absolute;
+    left:50%;
+    top:120px;
+    width:1px;
+    height:60px;
+    background: #039;
+}
+.titleArea dl{
+    text-align: center;
+    color:#666
+}
+.titleArea dl dt{
+    font-size: 1.875em;
+    font-weight: 400;
+}
+.titleArea dl dd{
+    margin: 50px 0 100px 0;
+    color:#999;
+    font-size: 1.2em;
+}

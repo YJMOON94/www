@@ -1,0 +1,131 @@
+#wrap{
+    width:100%;
+}
+#imgBG{
+    position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display: block;
+}
+/* 메인 마우스 드랍 */
+.down {
+    display: block;
+    font-weight: 300;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -88px;
+    bottom: -10px;
+    animation: ani 1s infinite alternate;
+ }
+ @keyframes ani {
+    0% {
+       opacity: 1;
+       color: #fff;
+    }
+ 
+    100% {
+       opacity: 0.8;
+       color: rgba(255, 255, 255, .8);
+    }
+ }
+ .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    position: relative;
+    left: 50%;
+    margin-left: -17.5px;
+    bottom: 93px;
+    background: rgba(255, 255, 255, .5);
+ }
+ .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: mousescroll;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+ }
+ @keyframes mousescroll {
+    0% {
+       opacity: 0;
+    }
+ 
+    10% {
+       transform: translateY(0);
+       opacity: 1;
+    }
+ 
+    100% {
+       transform: translateY(15px);
+       opacity: 0;
+    }
+ }
+ #content{
+    width:auto;
+    overflow:hidden;
+    position: relative;
+    z-index: 1;
+ }
+ .backgroundSet{
+    background:rgba(0,0,0,.7);
+    padding: 100px 0;
+ }
+ .mainBox h2{
+    position: absolute;
+    top:45%;
+    width:100%;
+    text-align: center;
+    font-size: 3.5rem;
+    animation: mainTextAni .5s linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+ }
+ @keyframes mainTextAni {
+    from{
+        letter-spacing: 10rem;
+        opacity: 0;
+    }
+    to{
+        letter-spacing: 1.5rem;
+        opacity: 1;
+    }
+ }
+ .topText{
+    margin:100px 0;
+    text-align: center;
+}
+.topText dl{
+    line-height: 3;
+    width:96%;
+    margin:0 auto;
+}
+.topText dl dt{
+    font-size:2rem;
+    text-shadow: 2px 2px 20px #19f6e8;
+    font-weight: 700;
+}
+.terran,
+.protoss,
+.zerg,
+.trailer,
+.story{
+    opacity: 0;
+    position: relative;
+    top:100px;
+    transition: all .8s;
+}
+.scrollon{
+    opacity: 1;
+    top:0;
+}

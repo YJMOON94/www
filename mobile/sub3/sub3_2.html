@@ -1,0 +1,113 @@
+<? session_start() ?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>기술개발-신기술</title>
+
+<link rel="apple-touch-icon-precomposed" href="../common/images/app_icon.png">
+<link rel="apple-touch-startup-image" href="../common/images/startup.png">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/sub3_2.css">
+<link rel="stylesheet" href="../css/swiper.min.css">
+
+<script src="../common/js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+<script>
+
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+
+ </script>
+</head>
+
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+      <h2>기술개발</h2>
+    </div>
+    <div class="subnav">
+      <a href="#">신기술<span><i class="fa-solid fa-caret-down"></i></span></a>
+      <ul>
+          <li><a href="./sub3_1.html">신공법</a></li>
+          <li><a href="./sub3_3.html">연구소소개</a></li>
+      </ul>
+    </div>
+    <article id="content">   
+        <div class="titleArea">
+          <h2>신기술</h2>
+          <dl>
+              <dt>신기술 개발에 앞장서겠습니다.</dt>
+              <dd>어려운 경영환경 속에서도 조선·해양 분야의 선도기업으로 굳건히 자리매김할 수 있도록 중장기 선행기술을 확보하고 확보 기술의 상용화를 통하여 신제품 및 신기술 개발에 앞장서겠습니다.</dd>
+          </dl>
+        </div> 
+        <div class="contentArea">
+          <div class="conTop">
+            <div class="whiteCircle">
+              <ul>
+                <li>Developed</li>
+                <li>2022</li>
+              </ul>
+            </div>
+          </div>
+          <div class="conBtm">
+            <ul>
+              <li>
+                <a href="#" class="popBtn">
+                  <span></span>
+                  <div>
+                      <h3>에너지 저감장치</h3>
+                      <p>SAVER Airn</p>
+                      <p>SAVER CAP</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="popBtn">
+                  <span></span>
+                    <div>
+                      <h3>친환경 시스템</h3>
+                      <p>배터리 시스템</p>
+                      <p>연료전지 시스템</p>
+                    </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="popBtn">
+                  <span></span>
+                    <div>
+                      <h3>엔지니어링</h3>
+                      <p>해양 엔지니어링</p>
+                      <p>안전학습</p>
+                    </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pop">
+          <a href="#" class="popClose"><i class="fa-solid fa-xmark"></i></a>
+          <div class="popCon">
+  
+          </div>
+        </div>
+    </article>
+
+
+    <? include "../common/sub_footer.html" ?>
+
+  </div>
+<script src="./js/pop2.js"></script>
+ 
+</body>
+</html>

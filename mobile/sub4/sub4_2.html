@@ -1,0 +1,65 @@
+<? session_start() ?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>고객센터-일정</title>
+
+<link rel="apple-touch-icon-precomposed" href="../common/images/app_icon.png">
+<link rel="apple-touch-startup-image" href="../common/images/startup.png">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/sub4_2.css">
+<link rel="stylesheet" href="./css/main.min.css">
+
+<script src="../common/js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+<script>
+
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+
+ </script>
+</head>
+
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+        <h2>고객센터</h2>
+    </div>
+    <div class="subnav">
+      <a href="#">일정<span><i class="fa-solid fa-caret-down"></i></span></a>
+      <ul>
+          <li><a href="./sub4_1.html">QnA</a></li>
+      </ul>
+    </div>
+    <article id="content">
+      <div class="titleArea">
+        <h2>일정</h2>
+        <dl>
+            <dt>삼성중공업의 모든 일정은 고객을 중심으로 정해집니다.</dt>
+            <dd>자체기술력과 생산능력으로 세계1위 생산량의 거의 모두를 수출하는 딜러박스 세계최고 수준의 인력과 실비 모두 대한민국의 오늘입니다.</dd>
+        </dl>
+      </div> 
+      <div class="contentArea">
+        <div id='calendar'></div>
+      </div>
+    </article>
+
+
+    <? include "../common/sub_footer.html" ?>
+
+  </div>
+
+  <script src="./js/main.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

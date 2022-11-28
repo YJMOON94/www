@@ -1,0 +1,273 @@
+/* 사업분야 본문 영역 */
+#content{
+    width:100%;
+    margin:0
+}
+.conMid, .conBtm{
+    width:1200px;
+    position:relative;
+    left:50%;
+    margin-left: -600px;
+    margin-bottom: 100px;
+}
+.conMid h3{
+    position: absolute;
+    top:150px;
+    left:100px;
+    font-size: 3.125em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.conBtm h3{
+    position: absolute;
+    top:150px;
+    right:100px;
+    font-size: 3.125em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.conMid h3::before{
+    content:'Introduce';
+    position:absolute;
+    top:-50px;
+    left:0;
+    color:#999;
+    font-size: .5em;
+}
+.conBtm h3::before{
+    content:'Introduce';
+    position:absolute;
+    top:-50px;
+    right:0;
+    color:#999;
+    font-size: .5em;
+}
+.conMid h3::after{
+    content:'';
+    position:absolute;
+    top:150px;
+    left:99px;
+    width:1px;
+    height:100px;
+    background: #039;
+}
+.conBtm h3::after{
+    content:'';
+    position:absolute;
+    top:150px;
+    right:99px;
+    width:1px;
+    height:100px;
+    background: #039;
+}
+.conMid .gallery{
+    position:relative;
+    left:70%;
+    top:0;
+    margin-left: -200px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.conBtm .gallery{
+    position:relative;
+    left:30%;
+    top:0;
+    margin-left: -800px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.gallery img{
+    width: 1000px;
+    height:750px;
+}
+.gallery li{
+    /* display: none; */
+}
+.conMid .blueBox{
+    width:1100px;
+    height:250px;
+    background: #06c;
+    position: absolute;
+    left:30%;
+    bottom:0;
+    opacity: 0;
+    margin-left: -900px;
+    color:#fff;
+    transition: all .5s ease-out;
+}
+.conBtm .blueBox{
+    width:1100px;
+    height:250px;
+    background: #06c;
+    position: absolute;
+    left:70%;
+    bottom:0;
+    opacity: 0;
+    margin-left:-200px;
+    color:#fff;
+    transition: all .5s ease-out;
+}
+.conBtm .blueBox ul:nth-of-type(1) li{
+    /* display: none; */
+}
+.conMid .blueBox ul:nth-child(1){
+    position:absolute;
+    top:95px;
+    left:50%;
+    margin-left:-160px;
+    font-size: 2.5em;
+}
+.conMid .blueBox ul:nth-child(1) li{
+    /* display: none; */
+}
+.conBtm .blueBox ul:nth-child(1){
+    position:absolute;
+    font-size: 2.5em;
+    top:95px;
+    right:50%;
+    margin-right: -160px;
+}
+.conMid .blueBox ul:nth-child(2){
+    position:absolute;
+    top:30px;
+    right:20px;
+    font-size: 2.5em;
+    overflow:hidden
+}
+.conBtm .blueBox ul:nth-child(2){
+    position: absolute;
+    top:30px;
+    left:120px;
+    overflow:hidden;
+    font-size: 2.5em;
+}
+.blueBox ul:nth-child(2)::after{
+    content:'';
+    position:absolute;
+    width:1px;
+    height:25px;
+    background: #fff;
+    left:70px;
+    top:20px;
+}
+.blueBox ul:nth-child(2) li{
+    float:left;
+    margin-right: 100px;
+}
+.blueBox ul:nth-child(3){
+    position:absolute;
+    right:0;
+    bottom:30px;
+    overflow:hidden
+}
+.conBtm .blueBox ul:nth-child(3){
+    position: absolute;
+    left:100px;
+    bottom: 30px;
+    overflow: hidden;
+}
+.blueBox ul:nth-child(3) li{
+    float:left;
+    margin-right: 100px;
+}
+.blueBox ul:nth-child(3) li a{
+    font-size: 2.5em;
+    color:#fff
+}
+.textBox{
+    width:1200px;
+    height:420px;
+    margin:0 auto 100px auto;
+    text-align: justify;
+}
+.textBox dl{
+    position:relative;
+    /* display: none; */
+}
+.textBox dt{
+    font-weight: 700;
+    color:#039;
+    font-size: 1.6em;
+    margin-bottom: 50px;
+}
+.textBox dt::before{
+    content:'';
+    display: block;
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background: #039;
+    position:absolute;
+    top:15px;
+    left:-40px
+}
+.textBox dd{
+    line-height: 1.5em;
+    font-size: 1.6em;
+    margin-bottom: 30px;
+}
+.chartBox{
+    width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.chartBox h3{
+    margin: 0 0  40px 1040px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.chartBox h3::after{
+    content:'';
+    display: block;
+    clear:both
+}
+.topText{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.topText li{
+    float:left;
+    margin-left: 150px;
+    font-size: 1.2em;
+    position: relative;
+}
+.topText li::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width:80px;
+    height: 3px;
+    background: #039;
+    left:-100px;
+    top:15px;
+}
+.topText li:nth-of-type(2)::before{
+    background: #06c;
+}
+.topText li:nth-of-type(3)::before{
+    /* display: none; */
+}
+.topText li:last-child{
+    float:right;
+    color:#666
+}
+.topText li:nth-child(1){
+    color:#039
+}
+.topText li:nth-child(2){
+    color:#06c
+}
+.chartBox p{
+    float:right;
+}
+.chartBox p::after{
+    content:'';
+    display: block;
+    clear:both
+}
+.chart{
+    width:1200px;
+    margin:0 auto 100px;
+}
+.opacityLeftOn{
+    opacity: 1 !important;
+    left:50% !important;
+}

@@ -1,0 +1,15 @@
+.terran,
+.protoss,
+.zerg,
+.trailer,
+.story,
+.gallery{
+    opacity: 0;
+    position: relative;
+    top:100px;
+    transition: all .8s;
+}
+.scrollon{
+    opacity: 1;
+    top:0;
+}

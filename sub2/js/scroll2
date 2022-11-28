@@ -1,0 +1,13 @@
+$(window).on('scroll',function(){
+    var scroll = $(window).scrollTop();
+
+    if(scroll>700){
+        $('.conMid .gallery').addClass('opacityLeftOn');
+        $('.conMid .blueBox').addClass('opacityLeftOn');
+    };
+    if(scroll>2100){
+        $('.conBtm .gallery').addClass('opacityLeftOn');
+        $('.conBtm .blueBox').addClass('opacityLeftOn');
+    };
+    console.log(scroll);
+})

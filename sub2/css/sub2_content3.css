@@ -1,0 +1,101 @@
+#content{
+    width:1200px;
+    margin:0 auto;
+}
+.conTop{}
+.conTop h3{
+    font-size: 2.5em;
+}
+.conTop ul{
+    margin-top: 100px;
+}
+.conTop ul li{
+    overflow: hidden;
+    margin-bottom: 100px;
+    padding:30px;
+    border-radius: 20px;
+    transition: all .3s ease-out;
+}
+.conTop ul li:hover{
+    background: #f3f3f3;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+.conTop ul li h4{
+    float:left;
+    color:#039;
+    font-size: 1.5em;
+}
+.conTop ul li p{
+    margin: 0 0 30px 300px;
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 1.25em;
+}
+.conTable{}
+.conTable table .borderNone{
+    border:none;
+}
+.conTable caption{
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.conTable table{
+    text-align: left;
+    font-size: 1.25em;
+    margin-bottom: 100px;
+    width:1200px;
+}
+.conTable table tr{
+    border-top: 1px solid #ccc;
+    transition: all .5s ease-out;
+}
+.conTable table tr:hover{
+    background: #f3f3f3;
+}
+.conTable table th{
+    padding:10px 30px 10px 30px;
+    color:#039
+}
+.conTable table:nth-of-type(2) .borderNone th{
+    color:#06c;
+    padding: 30px 0 30px 30px;
+}
+.conTable table td{
+    padding:30px 0 30px 30px;
+}
+.conMid{}
+.conMid h3{
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+.conMid p{
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+.conMid dl{
+    margin-bottom: 40px;
+    overflow:hidden
+}
+.conMid span{
+    display: block;
+    color:#039;
+    font-size: 1.75em;
+    font-weight: 500;
+    margin: 80px 0;
+}
+.conMid dt{
+    float:left;
+    font-size: 1.5em;
+    font-weight: 400;
+    color:#06c
+}
+.conMid dd{
+    margin-left: 300px;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+}

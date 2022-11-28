@@ -1,0 +1,112 @@
+/*-------------------------------------------------------------------*/
+.grid--images .grid-sizer,
+.grid-image-item {
+    width: 25%;
+}
+.grid-image-item {
+    float: left;
+    margin-bottom: 40px;
+}
+.grid-image-item .grid-image-item {
+    width: 100%;
+    box-sizing: border-box;
+    /* padding: 3%; */
+    margin: 0 auto;
+    box-shadow: 2px 2px 20px #19f6e8;
+}
+.grid-image-item img {
+    border-radius: 3%;
+    display: block;
+    width: 100%;
+    margin:0 auto;
+    transition: transform .3s ease-out;
+}
+.grid-image-item p {
+    font-size: .6rem;
+    position: absolute;
+    left:20px;
+    bottom:20px;
+    text-align: left;
+}
+
+/*-------------------------------------------------------------------*/
+
+
+
+.effect-jazz {
+    width:90%;
+    box-sizing: border-box;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.effect-jazz .backColor {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    opacity: 0;
+    background: linear-gradient(-45deg, rgba(255,255,255,.3) 0%,rgba(0,0,0,.5) 100%);
+    transition: opacity 0.3s;
+    z-index: 5;
+    overflow: hidden;
+}
+.backColor::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+    transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: opacity 0.35s, transform 0.35s;
+}
+.effect-jazz:hover .backColor::after {
+    opacity: 1;
+    -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+    transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
+}
+.effect-jazz:hover .backColor,
+.effect-jazz:hover
+{
+    opacity: 1;
+ }
+ .effect-jazz:hover img{
+    transform: scale(1.1);
+ }
+
+@media screen and (max-width:1024px) {
+
+    .grid--images .grid-sizer,
+    .grid-image-item {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .grid--images .grid-sizer,
+    .grid-image-item {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .grid--images .grid-sizer,
+    .grid-image-item {
+        width: 50%;
+    }
+    .effect-jazz .backColor{
+        opacity: 1;
+        background: none;
+    }
+}

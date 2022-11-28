@@ -1,0 +1,153 @@
+.titleArea{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.titleArea h2{
+    font-size: 1.786rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.titleArea dl{
+    padding:0 20px
+}
+.titleArea dl dt{
+    font-size: 1.429rem;
+    margin-bottom: 20px;
+}
+.titleArea dl dd{
+    color: #999
+}
+/* 컨텐츠 부분 */
+.contentArea{
+    width:100%;
+}
+.conTop>div, .conMid>div, .conBtm{
+    margin-bottom: 30px;
+}
+.conTop>div h3, .conMid>div h3, .conBtm h3{
+    text-align: center;
+    font-size: 1.786rem;
+    font-weight: 700;
+    color:#039;
+    margin-bottom: 30px;
+}
+.conTop>div p, .conMid>div p, .conBtm p{
+    text-align: justify;
+    padding:0 20px;
+}
+/* conTop 이미지 */
+.conTop>div span{
+    background: url(../images/solution320_01.png) center center no-repeat;
+}
+.conTop .leftCon ul li:first-child span{
+    background: url(../images/solution320_02.png) center center no-repeat;
+}
+.conTop .leftCon ul li:last-child span{
+    background: url(../images/solution320_03.png) center center no-repeat;
+}
+.conTop .rightCon ul li:first-child span{
+    background: url(../images/solution320_04.png) center center no-repeat;   
+}
+.conTop .rightCon ul li:last-child span{
+    background: url(../images/solution320_05.png) center center no-repeat;
+}
+.conMid>div span{
+    background: url(../images/solution320_06.png) center center no-repeat;
+}
+.conMid .leftCon span{
+    background: url(../images/solution320_07.png) center center no-repeat;
+}
+.conMid .rightCon span{
+    background: url(../images/solution320_08.png) center center no-repeat;
+}
+.conBtm div{
+    background: url(../images/solution320_09.png) center center no-repeat;
+}
+/* 해상도별 이미지 교체 */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .conTop>div span{
+        background: url(../images/solution640_01.png) center center no-repeat;
+    }
+    .conTop .leftCon ul li:first-child span{
+        background: url(../images/solution640_02.png) center center no-repeat;
+    }
+    .conTop .leftCon ul li:last-child span{
+        background: url(../images/solution640_03.png) center center no-repeat;
+    }
+    .conTop .rightCon ul li:first-child span{
+        background: url(../images/solution640_04.png) center center no-repeat;   
+    }
+    .conTop .rightCon ul li:last-child span{
+        background: url(../images/solution640_05.png) center center no-repeat;
+    }
+    .conMid>div span{
+        background: url(../images/solution640_06.png) center center no-repeat;
+    }
+    .conMid .leftCon span{
+        background: url(../images/solution640_07.png) center center no-repeat;
+    }
+    .conMid .rightCon span{
+        background: url(../images/solution640_08.png) center center no-repeat;
+    }
+    .conBtm div{
+        background: url(../images/solution640_09.png) center center no-repeat;
+    }
+}
+
+/* 이미지 사이즈 설정 */
+.conTop>div span,
+.conTop .leftCon ul li:first-child span,
+.conTop .leftCon ul li:last-child span,
+.conTop .rightCon ul li:first-child span,
+.conTop .rightCon ul li:last-child span,
+.conMid>div span,
+.conMid .leftCon span,
+.conMid .rightCon span,
+.conBtm div{
+    display: block;
+    width:100%;
+    height:175px;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+.contentArea dl{
+    width:90%;
+    margin:0 auto;
+    padding:5px 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+    background: #fff;
+    position: relative;
+    top:-50px
+}
+.contentArea dl dt{
+    font-size: 1.429rem;
+    font-weight: 500;
+    color:#06c;
+}
+.contentArea dl dd{
+    text-align: justify;
+}
+.chart{
+    padding:0 20px;
+    margin-bottom: 30px;
+}
+.chart ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px;
+}
+.chart ul li{
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+.chart ul li p{
+    text-align: center;
+    font-weight: 500;
+    color:#039;
+    margin-bottom: 15px;
+}
+.chart ul li span{
+    text-align: justify;
+}

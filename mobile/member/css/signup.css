@@ -1,0 +1,128 @@
+*{margin:0; padding:0;}
+input{border:none; background: none; outline: none;}
+dt,dd,dl{margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+body {
+    background: #f3f3f3;
+}
+.logo {
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin:70px auto 50px;
+}
+.logo img{
+    width:100%;
+}
+#content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10% 5% 5%;
+    /* box-shadow: 3px 3px 20px rgba(0,0,0,.3); */
+    /* border-radius: 5px; */
+    box-sizing: border-box;
+    background: #fff;
+}
+h2{
+    font-size: 25px;
+    margin:0;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+}
+dl{
+    /* display: flex; */
+    padding:15px 0 0;
+    margin-bottom: 40px;
+    align-items: center
+}
+dt{
+    width:100%;
+    font-size: 1.125rem;
+    color:#333;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+dd{
+    width:100%;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    position: relative;
+    background: #fdfdfd;
+    border:1px solid #ddd
+}
+dd #loadtext, dd #loadtext2, dd #loadtext3{
+    position: absolute;
+    left:5px;
+    bottom:-25px;
+    font-size: 1rem;
+}
+dd input{
+    width:100%;
+    font-size: 1.25rem;
+    height:80px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.flexBox dd{
+    display: flex;
+    /* width: 20%; */
+}
+dd .hp{
+    font-size: 1.25rem;
+    text-align: left;
+    /* padding:5px 20px 5px 2px; */
+    font-weight: 300;
+    height:50px;
+    margin-top: 15px;
+    margin-right: 2%;
+}
+.flexBox span{
+    line-height: 75px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.flexBox input{
+    box-sizing: border-box;
+    /* padding: 0 50px; */
+}
+.signUp{
+    width:100%;
+}
+.signUp div{
+    display: flex;
+}
+.signUp div a{
+    width:50%;
+    box-sizing: border-box;
+    padding:30px 0;
+    text-align: center;
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.signUp div a:nth-child(1){
+    background: #039;
+    transition: background .3s
+}
+.signUp div a:nth-child(1):hover{
+    background: #06c;
+}
+.signUp div a:nth-child(2){
+    background: #999;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+ transition: background-color 5000s ease-in-out 0s;
+ -webkit-transition: background-color 9999s ease-out;
+ -webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,0) inset !important;
+ -webkit-text-fill-color: #333 !important;
+}
+/* 회원가입 수정 */
+dd .modify{
+    line-height: 70px;
+    font-weight: 700;
+}

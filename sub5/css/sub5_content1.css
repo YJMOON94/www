@@ -1,0 +1,187 @@
+.contentArea{
+    width:1200px;
+    margin:0 auto;
+}
+.cricleBox{}
+.circleBox ul{
+    overflow:hidden;
+    position: relative;
+    height:500px;
+    padding-bottom: 100px;
+}
+.circleBox li:first-child{
+    position: absolute;
+    left:150px;
+    top:0;
+}
+.circleBox li:last-child{
+    position: absolute;
+    left:550px;
+    top:0;
+}
+.circleBox li{
+    box-sizing: border-box;
+    float:left;
+    width:500px;
+    height:500px;
+    border-radius: 250px;
+    border:1px solid #039;
+    transition:  all .5s ease-out;
+    background: #fff;
+    z-index: 0;
+}
+.circleBox li:hover{
+    border: 1px solid #06c;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+    z-index: 1;
+}
+.circleBox li img{
+    width:150px;
+    margin: 100px 175px 50px 175px;
+}
+.circleBox li p{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 500;
+    margin:0 auto
+}
+.circleBox li:hover p{
+    color:#039
+}
+.circleBox li p::after{
+    content:'new recruit';
+    display: block;
+    font-size: .8em;
+    opacity: .5;
+}
+.circleBox li:last-child p::after{
+    content:'career';
+}
+.textBox{
+
+}
+.contentArea h3{
+    font-size: 2.5em;
+    font-weight:700;
+    margin: 50px 0;
+    color:#039;
+}
+.textBox ul{
+    margin-bottom: 100px;
+}
+.textBox li{
+    overflow:hidden;
+    padding:50px;
+    transition: all .3s ease-out;
+}
+.textBox li:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+.textBox h4{
+    float:left;
+    font-size: 1.75em;
+}
+.textBox p{
+    margin-left:200px;
+    font-size: 1.5em;
+    position: relative;
+}
+.textBox p a{
+    display: inline-block;
+    margin-left: 20px;
+    padding:5px 20px;
+    border-radius: 25px;
+    transition: all .3s ease-out;
+}
+.textBox p a:hover{
+    color:#fff;
+    background: #06c;
+    box-shadow:5px 5px 10px rgba(0,0,0,.3);
+}
+.textBox p::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width:3px;
+    height:10px;
+    transform: rotate(45deg);
+    background: #039;
+    left:-20px;
+    right:0;
+}
+.textBox ul li p:nth-of-type(1){
+    margin-bottom: 50px;
+}
+.proBox{
+    margin-bottom: 50px;
+    position: relative;
+}
+.proBox::after{
+    content:'';
+    position: absolute;
+    opacity: .3;
+    top:5%;
+    left:0;
+    width:1200px;
+    height:1200px;
+    background: url(../images/circumference.png) 50% 50% no-repeat;
+    background-size: 1200px;
+    z-index: -1;
+}
+.proBox p{
+    font-size: 2em;
+    font-weight: 500;
+    color:#06c
+}
+.proBox ul{
+    overflow:hidden;
+    padding-bottom: 50px;
+}
+.proBox ul>li{
+    text-align: center;
+    float:left;
+    width:300px;
+    box-sizing: border-box;
+}
+.proBox ol li{
+    position: relative;
+    list-style: decimal;
+    list-style-position: inside;
+}
+.proBox ol li::after{
+    content:'';
+    width:30px;
+    height:30px;
+    background: url(../images/down-arrow.png) 0 0 no-repeat;
+    background-size: 30px;
+    position: absolute;
+    left:50%;
+    bottom:-50px;
+    margin-left:-15px;
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+.proBox ul>li:hover ol li::after{
+    opacity: 1;
+}
+.proBox ol li:last-child::after{
+    display: none;
+}
+.proBox ul>li:first-child{
+    margin:0 200px;
+}
+.proBox ul li ol{
+    font-size: 1.25em;
+    font-weight: 500;
+}
+.proBox ul li ol li{
+    padding:30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    border-radius: 25px;
+    margin-top: 70px;
+    transition: all .3s ease-out;
+}
+.proBox ul li ol li:hover{
+    background: #039;
+    color:#fff
+}

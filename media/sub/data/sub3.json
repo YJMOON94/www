@@ -1,0 +1,80 @@
+{
+    "raynor" : [
+        {
+            "name" : "Penetrating Round" ,
+            "demage" : "Deal 220 damage, knock back",
+            "ablity" : "Slow enemies in a line by 20% for 2 seconds",
+            "effect" : "Enemies close to Raynor are knocked back further."
+        },
+        {   
+            "name" : "Inspire",
+            "demage" : "Raynor and all nearby allied Minions and Mercenaries gain 30% Attack",
+            "ablity" : "Speed and 10% Movement Speed for 4 seconds",
+            "effect" : "Casting Inspire resets Raynor's Basic Attack cooldown."
+        },
+        {
+            "name" : "Adrenaline Rush",
+            "demage" : "Heal Raynor for 25% of his maximum Health over 1 second.",
+            "ablity" : "Raynor's Basic Attacks lower the cooldown of this by 0.5 seconds",
+            "effect" : "doubled against Heroes."
+        }
+    ]
+    ,
+    "kerrigan" : [
+        {
+            "name" : "Ravage",
+            "demage" : "Leap at a target, dealing 130 damage.",
+            "ablity" : " If the enemy dies within 1.5 seconds",
+            "effect" : "restore 1 charge and refund 20 Mana"
+        },
+        {
+            "name" : "Impaling Blades",
+            "demage" : "After 1.25 seconds, deal 165 damage",
+            "ablity" : "Stunning them for 1 second",
+            "effect" : "enemies within the target area"
+        },
+        {
+            "name" : "Primal Grasp",
+            "demage" : "dealing 25 damage",
+            "ablity" : "After 2.5 seconds, an explosion occurs around Kerrigan",
+            "effect" : "dealing 195 damage to nearby enemies"
+        }
+    ],
+    "zeratul" : [
+        {
+            "name" : "Cleave",
+            "demage" : "Deal 200 damage to nearby enemies",
+            "ablity" : "Gain Stealth when out of combat for 3 seconds",
+            "effect" : "Remaining stationary for at least 1.5 seconds"
+        },
+        {
+            "name" : "Singularity Spike",
+            "demage" : "Deals 240 damage",
+            "ablity" : "Slows the enemy by 40% for 3 seconds",
+            "effect" : "Spell Damage, Crowd control"
+        },
+        {
+            "name" : "Might Of The Nerazim",
+            "demage" : "Basic Ability, dealing 50% less damage",
+            "ablity" : "Activate to cast an untalented version",
+            "effect" : "Zeratul's next Basic Attack within 6 seconds deals 30% more damage"
+        }
+    ],
+    "music" : [
+        {
+            "title" : "Terran music 1.",
+            "content" : "Terran Three(From starcraft)",
+            "content2" : "Lord Bif Music 2010"
+        },
+        {
+            "title" : "Terran music 2.",
+            "content" : "Terran Three(From starcraft)",
+            "content2" : "Lord Bif Music 2011"
+        },
+        {
+            "title" : "Terran music 3.",
+            "content" : "Terran Three(From starcraft)",
+            "content2" : "Lord Bif Music 2012"
+        }
+    ]
+}   

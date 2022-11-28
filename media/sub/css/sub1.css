@@ -1,0 +1,286 @@
+.mainContent{
+    width:100%;
+}
+.mainContent ul{
+
+}
+.mainContent>ul>li{
+    width: 100%;
+    background-position: 50% bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:13% 8%;
+    box-sizing: border-box;
+    position: relative;
+}
+.mainContent>ul>li::after{
+    content:'';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+.mainContent>ul>li dl{
+    padding-left: 50%;
+    line-height: 2;
+    position: relative;
+    z-index: 2;
+    text-align: right;
+    margin-bottom: 35px;
+}
+.mainContent>ul>li:nth-of-type(2) dl{
+    padding-left: 0;
+    width:50%;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+.mainContent>ul>li dl dt{
+    font-size: 2.5rem;
+}
+.mainContent>ul>li dl dt span{
+    display: inline-block;
+    border-radius: 10px;
+    padding:10px 15px;
+    box-shadow: 2px 2px 30px rgba(255,255,255,.9),2px 2px 60px rgba(255,255,255,.9);
+    transition: all .3s;
+}
+.mainContent>ul>li dl dd{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 50px;
+    line-height: 2;
+}
+.mainContent>ul>li:nth-of-type(1){
+    background-image: url(../images/sub1/story03.jpg);
+}
+.mainContent>ul>li:nth-of-type(1)::after{
+    background: linear-gradient(90deg, rgba(255,255,255,.0)10%, rgba(33,33,200,1)80%);
+}
+.mainContent>ul>li:nth-of-type(2){
+    background-image: url(../images/sub1/story01.jpg);
+}
+.mainContent>ul>li:nth-of-type(2)::after{
+    background: linear-gradient(90deg, rgba(0,200,255,1)10%, rgba(255,255,255,.0)80%);
+}
+.mainContent>ul>li:nth-of-type(3){
+    background-image: url(../images/sub1/story02.jpg);
+}
+.mainContent>ul>li:nth-of-type(3)::after{
+    background: linear-gradient(90deg, rgba(255,255,255,.0)10%, rgba(150,0,150,1)80%);
+}
+/* hover */
+.mainContent>ul>li:nth-of-type(1) dl dt:hover span{
+    background: rgba(255,255,255,.9);
+    color: #33f
+}
+.mainContent>ul>li:nth-of-type(2) dl dt:hover span{
+    background: rgba(255,255,255,.9);
+    color: #19f6e8
+}
+.mainContent>ul>li:nth-of-type(3) dl dt:hover span{
+    background: rgba(255,255,255,.9);
+    color: #93f
+}
+/* maincontent icon */
+.mainContent ul li ul{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50%;
+    position: relative;
+    z-index: 2;
+}
+.mainContent ul li:nth-of-type(2) ul{
+    padding-left: 0;
+    width:50%
+}
+.mainContent ul li ul li{
+
+}
+.mainContent ul li ul li span{
+    position: relative;
+    display: inline-block;
+    background-image: url(../images/sub1/backround.svg);
+    background-repeat: no-repeat;
+    width:74px;
+    height:74px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.mainContent ul li ul li span:before{
+    content:'';
+    display: block;
+    position: absolute;
+    background-image: url(../images/sub1/downarrow.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    left: 0;
+    bottom:0;
+    z-index: 1;
+    width: 100%;
+    bottom: -17px;
+    height: 11px;
+    transition: all .3s ease-out;
+    opacity: 0;
+}
+.mainContent ul li ul li span:after{
+    content:'';
+    display: block;
+    position: absolute;
+    background-image: url(../images/sub1/movingback.svg);
+    top:-4px;
+    left:-3px;
+    width: 78px;
+    height: 78px;
+    background-position: top;
+    animation: spinAni 2s linear infinite;
+    transition: all .3s ease-out;
+    opacity: 0;
+}
+.mainContent ul li ul li span:hover::before{
+    opacity: 1;
+}
+.mainContent ul li ul li span:hover::after{
+    opacity: 1;
+}
+@keyframes spinAni{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* skill text */
+.skillBox{
+    position: relative;
+    display: none;
+    z-index: 2;
+    padding-left: 50%;
+    margin-top: 35px;
+    z-index: 2;
+}
+.mainContent ul li:nth-of-type(2) .skillBox{
+    width:50%;
+    padding-left: 0;
+}
+.skillText{
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+.skillText.skill3{
+    position: relative;
+}
+.skillText.skill1,
+.skillText.skill2{
+    position: absolute;
+}
+.skillActive{
+    display: block;
+}
+.skillText p{
+    text-align: right;
+    margin-top: 30px;
+}
+.mainContent ul li:nth-of-type(2) .skillText p{
+    text-align: left;
+}
+.skillText span{
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgba(255,255,255,.7);
+}
+/* center image */
+.midBackImage{
+    width:100%;
+    height:200px;
+    background-image: url(../images/sub1/story4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+/* subcontent */
+.subContent{}
+.subContent ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    'a a'
+    'b c'
+    ;
+    column-gap: 10%;
+}
+.subContent ul li{
+    padding:5%;
+}
+.subContent ul li:nth-of-type(1){
+    grid-area: a;
+}
+.subContent ul li:nth-of-type(2){
+    grid-area: b;
+}
+.subContent ul li:nth-of-type(3){
+    grid-area: c;
+}
+.subContent ul li dl{
+    text-align: center;
+    box-shadow: 2px 2px 30px rgba(255,255,255,.6);
+    padding:5%;
+    border-radius: 10px;
+}
+.subContent ul li dl dt{
+    font-size: 2rem;
+    text-shadow: 0 0 30px #19f6e8, 0 0 60px #19f6e8, 0 0 90px #19f6e8;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+.subContent ul li dl dd{
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+/* tablet */
+@media screen and (max-width:1024px){
+    .subContent ul{
+        display: block !important;
+    }
+    .midBackImage{
+        width:100%;
+        height:200px;
+        background-image: url(../images/sub1/story4.jpg);
+        background-repeat: no-repeat;
+        background-attachment:local;
+        background-position: 70% center;
+    }
+}
+@media screen and (max-width:768px) {
+    .mainContent>ul>li dl{
+        padding-left: 0;
+        text-align: center;
+    }
+    .mainContent ul li ul{
+        padding-left: 0;
+    }
+    .skillBox{
+        padding-left: 0;
+    }
+    .skillText p{
+        text-align: left;
+    }
+    .mainContent>ul>li:nth-of-type(2),
+    .mainContent ul li:nth-of-type(2) .skillBox,
+    .mainContent ul li:nth-of-type(2) ul{
+        width:100%;
+    }
+    .mainContent>ul>li:nth-of-type(2) dl{
+        width:100%;
+        text-align: center;
+    }
+}

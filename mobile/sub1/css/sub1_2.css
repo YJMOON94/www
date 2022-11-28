@@ -1,0 +1,164 @@
+#content{
+    width:100%;
+}
+.titleArea{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.titleArea h2{
+    font-size: 1.786rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.titleArea dl{
+    padding:0 20px
+}
+.titleArea dl dt{
+    font-size: 1.429rem;
+    margin-bottom: 20px;
+}
+.titleArea dl dd{
+    color: #999
+}
+/* 지도 탭 영역 */
+.conTop{
+    width:90%;
+    border:1px solid #ccc;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px auto ;
+}
+.conTop ul{
+    overflow:hidden;
+}
+.conTop ul li{
+    float:left;
+    width:33.33%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.conTop .subTabNavs{
+    transition: background .3s ease-out;
+}
+.conTop ul li:last-child{
+    border-right:none;
+}
+.conTop ul li a{
+    padding: 30px 0;
+}
+/* 지도영역 */
+#map1, #map2, #map3{
+    width:100%;
+    height:500px;
+    border:1px solid #333;
+    box-sizing: border-box;
+}
+.conMid{
+    overflow:hidden;
+    /* height:1230px; */
+}
+.conMid>ul>li{
+    position:relative
+}
+.conMid>ul>li:nth-child(odd){
+    height:850px
+}
+.conMid>ul li ul {
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 70;
+    top:450px;
+    left:5%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 1rem;
+    background: #f9f9f9;
+    box-shadow:3px 3px 15px rgba(0,0,0,.2);
+    width:90%;
+    padding:10px
+}
+.conMid ul li ul li{
+    position: relative;
+    box-sizing: border-box;
+}
+.conMid ul li ul li i{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color:#039
+}
+.conMid ul li ul li dt{
+    font-size: 1.563rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.conMid dd{
+    font-size: 1rem;
+}
+.conMid>ul>li>dl{
+    display: block;
+    width:90%;
+    border:1px solid #ccc;
+    margin:0 auto;
+    padding:50px;
+    overflow:hidden
+}
+.way{
+    width:100%;
+    padding:20px;
+    box-sizing: border-box;
+}
+.way p{
+    margin-bottom: 40px;
+    font-size: 2.143rem;
+    color:#666
+}
+.way dt{
+    font-size: 1.5rem;
+    color:#039;
+    margin-bottom: 30px;
+}
+.way dd{
+    padding-bottom: 30px;
+    font-size: 1.25rem;
+}
+.way dl dd:nth-of-type(2) i{
+    color:#0d0
+}
+.way dl dd:nth-of-type(2) span{
+    background: #0d0;
+    border-radius: 10px;
+    color:#fff;
+    margin:0 20px;
+    display: inline-block;
+    padding:2px 10px;
+}
+.way dl dd:nth-of-type(4) i{
+    color:#00a
+}
+.way dl dd:nth-of-type(4) span{
+ background: #00a;
+ border-radius: 10px;
+ color:#fff;
+ font-weight: 500;
+ margin:0 20px;
+ display: inline-block;
+ padding:2px 10px;
+}
+.conMid>ul>li:nth-of-type(3),
+.conMid>ul>li:nth-of-type(4),
+.conMid>ul>li:nth-of-type(5),
+.conMid>ul>li:nth-of-type(6){
+    display: none;
+}
+.mapText{
+    display: inline-block;
+    padding:10px 20px;
+    background: #fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+    border-radius: 10px;
+    position: absolute;
+    left:-90px;
+    top:-120px
+}

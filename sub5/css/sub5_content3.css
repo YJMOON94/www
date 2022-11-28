@@ -1,0 +1,77 @@
+input {
+    outline: none;
+    border: none;
+    /* background-color:#999; */
+    border-radius: 5px;
+    width:100%;
+    height:70px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+input:focus {
+    outline:none
+}
+.contentArea{
+    width:1000px;
+    margin:0 auto;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+.input_nameBox,.input_emailBox{
+    width:50%;
+    padding:10px;
+    float:left;
+    box-sizing: border-box;
+}
+
+.phone_box{margin-top: 50px;}
+.phone_box label{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.message_box{margin-top: 50px;}
+.message_box label{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.send_box{margin: 20px 0 100px; overflow:hidden}
+.send_box button{
+    width:80px;
+    line-height: 50px;
+    color:#fff;
+    font-weight: 500;
+    background: linear-gradient(0deg, rgba(6,14,131,1) 0%, rgba(12,25,180,1) 100%);
+    border: none;
+    outline:none;
+    float:right;
+    cursor: pointer;
+}
+.message_box textarea{
+    width:100%;
+    box-sizing: border-box;
+    padding:30px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+    outline:none;
+    font-size: 1.25rem;
+}
+.phone_box input{
+    width:100%;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+.input_emailBox_inner,.input_nameBox_inner{
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+.input_emailBox_inner label,.input_nameBox_inner label{
+    position: absolute;
+    left:50px;
+    top:22px
+}
+.input_emailBox_inner input,.input_nameBox_inner input{
+    padding-left: 180px;
+}

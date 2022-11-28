@@ -1,0 +1,111 @@
+<? session_start() ?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>조선해양-사업분야</title>
+
+<link rel="apple-touch-icon-precomposed" href="../common/images/app_icon.png">
+<link rel="apple-touch-startup-image" href="../common/images/startup.png">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/sub2_1.css">
+
+<script src="../common/js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+<script>
+
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+
+ </script>
+</head>
+
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+        <h2>조선해양</h2>
+    </div>
+    <div class="subnav">
+        <a href="#">사업분야<span><i class="fa-solid fa-caret-down"></i></span></a>
+        <ul>
+            <li><a href="./sub2_2.html">솔루션</a></li>
+            <li><a href="./sub2_3.html">선박기초상식</a></li>
+        </ul>
+    </div>
+    <article id="content">  
+        <div class="titleArea">
+            <h2>사업분야</h2>
+            <dl>
+                <dt>끊임없는 창조와 혁신</dt>
+                <dd>삼성중공업의 고기술 고부가가치 기술로 선위주의 선별수주로 고수익 실현</dd>
+            </dl>
+        </div> 
+        <div class="contentArea">
+            <div id="ship" class="conMid">
+                <h3>1.조선사업</h3>
+                <ul class="gallery">
+                    <li><img src="./images/business640_01.png" alt=""></li>
+                </ul>
+                <div class="blueBox">
+                    <ul>
+                        <li class="galleryCnt">1</li>
+                        <li>7</li>
+                    </ul>
+                    <ul></ul>
+                    <ul>
+                        <li><a class="galleryBtn galleryBtnL" href="#"><span class="hidden">왼쪽으로이동</span><i class="fa-solid fa-arrow-left-long"></i></a></li>
+                        <li><a class="galleryBtn galleryBtnR" href="#"><span class="hidden">오른쪽으로이동</span><i class="fa-solid fa-arrow-right-long"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="textBox"></div>
+            <div id="sea" class="conBtm">
+                <h3>2.해양사업</h3>
+                <ul class="gallery">
+                    <li><img src="./images/ship640_01.png" alt=""></li>
+                </ul>
+                <div class="blueBox">
+                    <ul>
+                        <li class="galleryCnt">1</li>
+                        <li>7</li>
+                    </ul>
+                    <ul></ul>
+                    <ul>
+                        <li><a class="galleryBtn galleryBtnL" href="#"><span class="hidden">왼쪽으로이동</span><i class="fa-solid fa-arrow-left-long"></i></a></li>
+                        <li><a class="galleryBtn galleryBtnR" href="#"><span class="hidden">오른쪽으로이동</span><i class="fa-solid fa-arrow-right-long"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="textBox"></div>
+            <div class="chartBox">
+                <h3>건조실적</h3>
+                    <p>2022년 자료</p>
+            </div>
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        
+    </article>
+
+
+    <? include "../common/sub_footer.html" ?>
+
+  </div>
+ 
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+ <script src="./js/chart.js"></script>
+ <script src="./js/data.js"></script>
+ 
+</body>
+</html>

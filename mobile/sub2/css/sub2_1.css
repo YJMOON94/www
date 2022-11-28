@@ -1,0 +1,151 @@
+.titleArea{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.titleArea h2{
+    font-size: 1.786rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.titleArea dl{
+    padding:0 20px
+}
+.titleArea dl dt{
+    font-size: 1.429rem;
+    margin-bottom: 20px;
+}
+.titleArea dl dd{
+    color: #999
+}
+.conMid, .conBtm{
+    width:100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    position:relative;
+}
+.conMid .gallery{
+    position:relative;
+    transition: all .5s ease-out;
+}
+.conBtm .gallery{
+    position:relative;
+    transition: all .5s ease-out;
+}
+.gallery img{
+    width: 100%;
+}
+.conMid .blueBox{
+    width:80%;
+
+    background: linear-gradient(90deg, rgba(00,33,99,1), rgba(33,66,200,.9));
+    position: absolute;
+    bottom:-120px;
+    left:50%;
+    margin-left: -40%;
+    color:#fff;
+    transition: all .5s ease-out;
+}
+.conMid h3, .conBtm h3{
+    font-size: 2.143rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.conBtm .blueBox{
+    width:80%;
+    background: linear-gradient(90deg, rgba(00,33,99,1), rgba(33,66,200,.9));
+    position: absolute;
+    bottom:-120px;
+    left:50%;
+    margin-left: -40%;
+    color:#fff;
+    transition: all .5s ease-out;
+}
+.blueBox{}
+.blueBox ul:nth-of-type(1){
+    display: flex;
+    font-size: 1.429rem;
+    padding: 20px 0
+}
+.blueBox ul:nth-of-type(1) li{
+    width:50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.blueBox ul:nth-of-type(1) li:first-child{
+    border-right: 1px solid #999;
+}
+.blueBox ul:nth-of-type(2){
+    text-align: center;
+    font-size: 1.429rem;
+}
+.blueBox ul:nth-of-type(3){
+    display: flex;
+    font-size: 1.429rem;
+}
+.blueBox ul:nth-of-type(3) li{
+    width:50%;
+    box-sizing: border-box;
+    padding:20px 0;
+    text-align: center;
+}
+.blueBox a{
+    color:#fff
+}
+.textBox{
+    width:100%;
+    padding:0 20px;
+    box-sizing: border-box;
+    margin:150px auto 50px auto;
+    text-align: justify;
+}
+.textBox dl{
+    position:relative;
+}
+.textBox dt{
+    font-weight: 700;
+    color:#039;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+.textBox dt::before{
+    content:'';
+    display: block;
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background: #039;
+    position:absolute;
+    top:15px;
+    left:-40px
+}
+.textBox dd{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+.chartBox{
+    width:100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+.chartBox h3::after{
+    content:'';
+    display: block;
+    clear:both
+}
+.chartBox p{
+    float:right;
+}
+.chartBox p::after{
+    content:'';
+    display: block;
+    clear:both
+}
+.chart{
+    width:100%;
+}
+#myChart{
+    width:100%;
+    height:400px
+}

@@ -1,0 +1,64 @@
+.tecBox{}
+.tecBox div{
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+.tecBox div img{
+    width:300px;
+    float:left;
+}
+.tecBox h4{
+    font-size: 2.5em;
+    margin:150px 0 0 400px;
+    position: relative;
+}
+.tecBox h4::after{
+    content:'';
+    position: absolute;
+    width:200px;
+    height:3px;
+    background: #039;
+    left:300px;
+    top:30px;
+    transform-origin:left;
+    transform: scaleX(.05);
+    transition: all .3s ease-out;
+}
+.tecBox div:hover h4::after{
+    transform: scaleX(1);
+}
+.tecBox ul{
+    overflow:hidden;
+    padding:30px;
+    margin-bottom: 70px;
+}
+.tecBox ul li{
+    overflow:hidden;
+    padding:40px;
+    transition: all .3s ease-out;
+}
+.tecBox ul li:hover{
+    background: #f3f3f3;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+.tecBox ul li img{
+    float:right;
+    width:500px;
+    height:300px;
+}
+.tecBox ul li dl{
+    float:left;
+    width:500px;
+    line-height: 2em;
+    text-align: justify;
+}
+.tecBox dt{
+    color:#039;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.tecBox dd{
+    font-size: 1.125em;
+}

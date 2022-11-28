@@ -1,0 +1,113 @@
+<? session_start() ?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>기술개발-신공법</title>
+
+<link rel="apple-touch-icon-precomposed" href="../common/images/app_icon.png">
+<link rel="apple-touch-startup-image" href="../common/images/startup.png">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/sub3_1.css">
+
+<script src="../common/js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+<script>
+
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+
+ </script>
+</head>
+
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+      <h2>기술개발</h2>
+    </div>
+    <div class="subnav">
+      <a href="#">신공법<span><i class="fa-solid fa-caret-down"></i></span></a>
+      <ul>
+          <li><a href="./sub3_2.html">신기술</a></li>
+          <li><a href="./sub3_3.html">연구소소개</a></li>
+      </ul>
+    </div>
+    <article id="content">  
+      <div class="titleArea">
+          <h2>신공법</h2>
+          <dl>
+              <dt>신제품 개발에 앞장서겠습니다.</dt>
+              <dd>세계 경제의 침체 및 저유가 기조가 향후 몇 년간 지속될 것이라는 전망이 우세함에 따라 사업역량 강화를 위한 제품 성능의 차별화 및 원가경쟁력 확보에 초점을 맞춰 기술개발 활동을 추진하고 있습니다</dd>
+          </dl>
+      </div> 
+    <div class="contentArea">
+      <div class="conTop">
+          <div class="whiteCircle">
+            <ul>
+              <li>Developed</li>
+              <li>2022</li>
+            </ul>
+          </div>
+      </div>
+      
+      <div class="conBtm">
+        <ul>
+          <li>
+            <a href="#" class="popBtn">
+              <span></span>
+              <div>
+                  <h3>공법 최적화</h3>
+                  <p>One-time Settin</p>
+                  <p>듀얼 리프팅 공법</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="popBtn">
+              <span></span>
+                <div>
+                  <h3>자동화</h3>
+                  <p>배관 검사 자동화</p>
+                  <p>배관 오비탈 용접장비</p>
+                </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="popBtn">
+              <span></span>
+                <div>
+                  <h3>스마트 야드</h3>
+                  <p>Drawingless Yard</p>
+                  <p>Digital Twin</p>
+                </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+      <div class="pop">
+        <a href="#" class="popClose"><i class="fa-solid fa-xmark"></i></a>
+        <div class="popCon">
+
+        </div>
+      </div>
+      
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+
+  </div>
+
+ <script src="./js/pop.js"></script>
+</body>
+</html>

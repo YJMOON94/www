@@ -1,0 +1,47 @@
+#content .ceo{
+
+}
+.ceo span{
+    display: block;
+    width:100%;
+    height:200px;
+    background: url(../images/introduce640_01.png) no-repeat center center;
+    background-size: cover;
+}
+.ceo dl{
+    background: #fff;
+    position: relative;
+    top: -50px;
+    left:5%;
+    text-align: center;
+    width:90%;
+}
+.ceo dt{
+    font-size: 1.786rem;
+    font-weight: 500;
+    padding: 30px 0;
+}
+.ceo dd{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.btmText{}
+.btmText ul{
+    width:100%
+}
+.btmText ul li{
+    width:90%;
+    margin: 0 auto 50px;
+}
+.btmText ul li img{
+    width:100%
+}
+.btmText ul li dt{
+    color:#06c;
+    font-size: 1.786rem;
+    font-weight: 500;
+    padding: 20px 0
+}
+.btm Text ul li dd{
+    line-height: 2;
+}

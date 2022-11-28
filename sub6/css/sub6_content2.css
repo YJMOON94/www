@@ -1,0 +1,70 @@
+.contentArea{
+    width:1200px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.control{
+    overflow: hidden;
+}
+.control .total{
+    float:left;
+    width:100px;
+    background: #f00;
+}
+.control select{
+    float:right;
+}
+.control>ul{
+    overflow: hidden;
+    float: right;
+    margin-right: 50px;
+}
+.control>ul li{
+    float:left;
+}
+.listHead{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: #f3f3f3;
+}
+.listHead ul{
+    overflow: hidden;
+    width:100%;
+}
+.listHead ul li{
+    float:left;
+}
+.listWidth1{
+    width:7%;
+}
+.listWidth2{
+    width:60%;
+}
+.listWidth3{
+    width:14%;
+}
+.listWidth4{
+    width:10%;
+}
+.listWidth5{
+    width:7%;
+}
+.listBody li{
+    overflow:hidden
+}
+.listBody li div, .listBody li span{
+    float:left
+}
+.pageNum{
+    text-align: center;
+    overflow: hidden;
+}
+.pageNum span a{
+    display: inline;
+}
+.goList{
+    float:right;
+}
+.search{
+    float:right;
+}

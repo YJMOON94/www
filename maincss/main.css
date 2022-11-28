@@ -1,0 +1,874 @@
+/* 본문 컨텐츠 센터 잡기 */
+.main, .business, .technique, .news, .value, .recruit{
+    overflow: hidden;
+    position: relative;
+    width:2000px;
+    left:50%;
+    margin-left: -1000px;
+}
+/* 화살표 애니메이션 효과 */
+@keyframes arrow{
+    from{
+        margin-left: 30px;
+    }
+    50%{
+        margin-left: 50px;
+    }
+    to{
+        margin-left: 30px;
+    }
+}
+@keyframes mainScale{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+.arrowAni:hover i{
+    animation-name:arrow;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.arrowAni i{
+    margin-left:30px;
+}
+/* 메인 비주얼 영역 */
+.main{}
+.main .gallery{
+    position: relative;
+    overflow:hidden;
+    width:6000px;
+    left:0;
+    top:0;
+}
+.main .gallery ul li{
+    float:left;
+    position: relative;
+    overflow:hidden;
+}
+.main .gallery ul li img{
+    width:2000px;
+    height:1000px;
+    animation: mainScale 20s infinite ease;
+}
+.main .gallery_text{
+    position: absolute;
+    right:25%;
+    top:35%;
+    font-size: 3.5em;
+    font-weight: 500;
+    color:#fff;
+    text-align: right;
+    padding-top: 30px;
+    overflow:hidden;
+}
+.main .gallery_text li:nth-of-type(1)::before{
+    content: 'The future of the shipbuilding and offshore industry';
+}
+.main .gallery_text li:nth-of-type(2)::before{
+    content:'A challenge to become world-class';
+}
+.main .gallery_text li:nth-of-type(3)::before{
+    content:'The history of heavy industry in Korea';
+}
+.main .gallery_text li::before{
+    display: block;
+    position: absolute;
+    font-size: .4em;
+    top:0;
+    right:0;
+    color:#ccc
+}
+.main .gallery_text li{
+    display: none;
+}
+.main .gallery_text li span{
+    display: block;
+    font-size: .4em;
+    margin-top: 30px;
+    color:#ddd
+}
+.main .dock{
+    overflow:hidden;
+    position: absolute;
+    right:27%;
+    top:65%;
+    padding:10px 0;
+}
+.main .dock .mbutton{
+    position: relative;
+    float:left;
+    background: rgba(255,255,255,.5);
+    width:100px;
+    height:3px;
+    margin-left: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.main .dock .mbutton::after{
+    content:'';
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    width:0;
+    height:3px;
+    background: rgba(255,255,255,1);
+}
+.main .dock .mbutton.on::after{
+    width:100%;
+    transition: width 4s;
+}
+.main .dock .ps{
+    cursor: pointer;
+    float:left;
+    background: url(../images/stop.png) no-repeat;
+    background-size: 15px;
+    margin:-5px 0 10px 30px;
+    width:15px;
+    height:15px;
+}
+.main>span{
+    display: block;
+    width:100px;
+    height:100px;
+    background: rgba(255,255,255,.5);
+    position: absolute;
+    top:40%;
+    left:50%;
+    margin-left: -600px;
+    transition: all .3s ease-out;
+    text-indent: -1000%;
+    cursor: pointer;
+    opacity: .8;
+}
+.main>span:hover{
+    opacity: 1;
+}
+.main>span::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width:100px;
+    height:100px;
+    left:0;
+    top:0;
+    background: rgba(255,255,255,.2);
+    transition: all .3s ease-out;
+}
+.main>span:hover::before{
+    background: rgba(255,255,255,.5);
+}
+.main>span:nth-of-type(1){
+    background: url(../images/next_left.png) 50% 50% no-repeat;
+}
+.main>span:nth-of-type(2){
+    background: url(../images/next_right.png) 50% 50% no-repeat;
+}
+.main>span:last-child{
+    margin-top: 100px;
+}
+
+/* 본문 컨텐츠 위아래 영역, h3 폰트조절 */
+#content h3{
+    margin-bottom: 50px;
+    font-size: 3.750em;
+    text-align: center;
+}
+/* 본문 컨텐츠 영역 */
+#content{
+    width:100%;
+}
+/* 비즈니스 영역 */
+.business{
+    padding-top: 100px;
+    padding-bottom: 180px;
+    top:100px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.business .headingText{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.business .headingText h3::after{
+    content:'사업분야';
+    display: block;
+    color:#039;
+    margin-top: 30px;
+    font-size: .4em;
+}
+.business .gallery{
+    position: absolute;
+    left:60%;
+    opacity: 0;
+    margin-left: -257px;
+    transition: all .5s ease-out;
+    transition-delay: .5s;
+}
+.business .gallery ul li{
+    /* opacity: 0; */
+}
+.business .gallery ul li img{
+    width:1280px;
+    height:500px;
+}
+.business .businessBox{
+    position: relative;
+    width:500px;
+    height:500px;
+    background:linear-gradient(45deg, rgba(0,33,99,1),rgba(99,99,180,1));
+    top:100px;
+    left:40%;
+    opacity: 0;
+    margin-left: -555px;
+    box-shadow: 30px 30px 50px rgba(0,0,0,.3);
+    /* display:none; */
+    transition: all .5s ease-out;
+    transition-delay: .5s;
+}
+.businessBox ul{
+    overflow:hidden;
+    position:absolute;
+    padding:50px;
+    color:#fff
+}
+.businessBox ul li h4{
+    font-size: 2.188em
+}
+.businessBox ul li h4::before{
+    content:'SHIP BUILDING';
+    display: block;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color:rgba(255,255,255,.5)
+}
+.businessBox ul li p{
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
+    text-align: justify;
+    width: 400px;
+    margin-top: 50px
+}
+.businessBox ul li a{
+    font-weight: 300;
+    display: block;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 30px
+}
+.businessBox ul li:last-child{
+    /* display: none */
+}
+.businessBox .next{
+    overflow: hidden;
+    position: absolute;
+    right:0;
+    bottom:0;
+    text-align: center
+}
+.businessBox .next a{
+    width:100px;
+    height:100px;
+    float:left;
+    color:#fff
+}
+.next a:first-child{
+    background: url(../images/next_left.png) 50% 50% no-repeat;
+    opacity: .5;
+    transition: all .3s ease-out
+}
+.next a:last-child{
+    background: url(../images/next_right.png) 50% 50% no-repeat;
+    opacity: .5;
+    transition: all .3s ease-out
+}
+.next a:first-child:hover, .next a:last-child:hover{
+    opacity: 1
+}
+/* 솔루션 영역 */
+.solution h3:after{
+    content:'해결방안';
+    display: block;
+    color:#039;
+    margin-top: 30px;
+    font-size: .4em;
+}
+.solution{
+    padding:100px 0;
+    position: relative;
+    top:100px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.solution .headingText{
+    text-align: center;
+}
+.headingText p{
+    color:#999
+}
+.headingText a{
+    color:#666;
+    padding:10px;
+    margin:30px auto;
+    width:200px;
+    border-radius: 25px;
+    transition: all .3s ease-out;
+}
+.headingText a:hover{
+    color:#fff;
+    background: #039;
+}
+.solution>div{
+    width:1200px;
+    margin:0 auto
+}
+/* 솔루션 레이아웃 */
+.layOut{
+    overflow:hidden;
+    padding:100px 0;
+    position: relative;
+}
+.layOut li:first-child, .layOut li:last-child{
+    float:left;
+    text-align: center;
+    margin-top: 180px;
+    padding:20px 10px;
+}
+.layOut li:first-child h4, .layOut li:last-child p{
+    width:250px;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.layOut li span{
+    color:#999
+}
+.layOut .circleBox{
+    width:500px;
+    height:500px;
+    border-radius: 250px;
+    box-sizing: border-box;
+    float:left;
+    margin: 0 80px;
+    position: relative;
+}
+.layOut .circleBox dl{
+    width:500px;
+    height:500px;
+    box-sizing: border-box;
+    padding-top: 70px;
+    border-radius: 250px;
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    color:#fff;
+    font-weight: 500;
+    opacity: 0;
+    transition: all .3s ease-out;
+    transition-delay: 1s;
+}
+.layOut .circleBox dt{
+    font-size: 2em;
+    margin: 50px 0;
+}
+.layOut .circleBox dd{
+    width:400px;
+    margin:15px auto 0;
+}
+.layOut .circleBox dd a{
+    color:#fff;
+    width:120px;
+    margin:50px auto 0 auto;
+    border-radius: 25px;
+    padding:10px;
+    transition: all .3s ease-out;
+}
+.layOut:hover .circleBox a:hover{
+    color:#039;
+    background: rgba(255,255,255,.8);
+}
+.layOut:hover .circleBox dl{
+    opacity: 1;
+    padding-top: 50px;
+}
+.layOut .circleBox::before{
+    content:'';
+    display: block;
+    width:500px;
+    height:500px;
+    border-radius: 250px;
+    background: #039;
+    opacity: .1;
+    position: absolute;
+    left:0;
+    top:50px;
+    z-index: -1;
+}
+.layOut .circleBox::after{
+    content:'';
+    display: block;
+    position: absolute;
+    width:950px;
+    height:2px;
+    margin-top: -1px;
+    margin-left: -475px;
+    background: #039;
+    opacity: .6;
+    transform: rotate(-20deg);
+    left:50%;
+    top:50%;
+    transition: all 1s ease-out;
+    z-index: -2;
+}
+.layOut:hover .circleBox::after{
+    transform: rotate(360deg);
+}
+.layOut li:first-child::before{
+    content:'';
+    display: block;
+    width:10px;
+    height:10px;
+    border-radius: 5px;
+    background: #039;
+    opacity: .6;
+    position: absolute;
+    left:10%;
+    bottom:25%;
+    margin:0 0 6px 25px;
+    transition: all 1s ease-out;
+}
+.layOut li:last-child::before{
+    content:'';
+    display: block;
+    width:10px;
+    height:10px;
+    border-radius: 5px;
+    background: #039;
+    opacity: .6;
+    position: absolute;
+    right:10%;
+    top:25%;
+    margin: 6px 25px 0 0;
+    transition: all 1s ease-out;
+}
+.layOut:hover li:first-child::before{
+    margin:0;
+    left:9%;
+    bottom:50%;
+    margin-left:8px;
+    margin-bottom: -5px;
+}
+.layOut:hover li:last-child::before{
+    margin:0;
+    right:10%;
+    top:50%;
+    margin-right:-4px;
+    margin-top:-4px;
+}
+/* 솔루션 영역별 텍스트 사진 */
+.green .circleBox{
+    background: url(../images/solution1.jpg) 50% 50% no-repeat;
+}
+.digital .circleBox{
+    background: url(../images/solution2.jpg) 50% 50% no-repeat;
+}
+.global .circleBox{
+    background: url(../images/solution3.jpg) bottom no-repeat;
+}
+.digital, .global{
+    display: none;
+}
+/* 테크닉 영역 */
+.technique{
+    padding:100px 0;
+    background: #111;
+}
+.technique>div{
+    width:1200px;
+    margin:0 auto;
+    color:#fff;
+    text-align: center;
+}
+.technique .headingText{
+    margin-bottom: 100px;
+}
+.technique h3::before{
+    content:'신기술 신공법';
+    display: block;
+    color:#aaa;
+    margin-bottom: 30px;
+    font-size: .4em;
+}
+.technique .headingText a:hover{
+    background: #fff;
+    color:#039;
+    font-weight: 700;
+}
+.technique .textBox{
+    color:#fff;
+    margin-bottom: 100px;
+}
+.technique .textBox ul{
+    overflow:hidden;
+    width:1000px;
+    margin-left: 250px
+}
+.technique .textBox li{
+    float:left;
+    margin-right:80px;
+    text-align: left;
+    width:130px;
+}
+.technique .textBox dt{
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.technique .textBox dd{
+    color: #999;
+    font-weight: 300;
+}
+.technique .arcodian{
+    width:1800px;
+    height:550px;
+    position: relative;
+    left:0;
+    /* overflow: hidden; */
+}
+.technique .arcodian .slide_gallery{
+    overflow: hidden;
+    position: relative;
+    left:0;
+    width:3600px;
+}
+.technique .arcodian ul{
+    float:left;
+}
+.technique .arcodian li{
+    position: relative;
+    float:left;
+}
+.technique .arcodian .img1{
+    background: url(../images/technique1.jpg) center no-repeat;
+}
+.technique .arcodian .img2{
+    background: url(../images/technique2.jpg) no-repeat;
+}
+.technique .arcodian .img3{
+    background: url(../images/technique3.jpg) no-repeat;
+}
+.technique .arcodian .img4{
+    background: url(../images/technique4.jpg) no-repeat;
+}
+.technique .arcodian .img5{
+    background: url(../images/technique5.jpg) no-repeat;
+}
+.technique .arcodian .img6{
+    background: url(../images/technique6.jpg) no-repeat;
+}
+.technique .arcodian .img7{
+    background: url(../images/technique7.jpg) no-repeat;
+}
+.technique .arcodian .img8{
+    background: url(../images/technique8.jpg) no-repeat;
+}
+.technique .arcodian .img9{
+    background: url(../images/technique9.jpg) no-repeat;
+}
+.technique .arcodian .arcodianTxt{
+    width:200px;
+    height:450px;
+    box-sizing: border-box;
+    text-align: left;
+    overflow: hidden;
+    background:rgba(0,0,0,.3);
+    padding:0 30px;
+    opacity: .3;
+    transition: all .3s ease-out;
+}
+.arcodianTxt h4{
+    font-size: 1em;
+    font-weight: 700;
+    margin: 200px 0 30px 0;
+}
+.arcodianTxt p{
+    font-size: .8em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.tecBtn .tecLR{
+    width:34px;
+    height:62px;
+    margin:0 auto;
+    opacity: .8;
+    transition: all .3s;
+    text-indent: -10000%;
+    color:#fff;
+}
+.tecBtn .tecLR:hover{
+    opacity: 1;
+}
+.tecBtn .left{
+    background: url(../images/next_left.png) no-repeat;
+}
+.tecBtn .right{
+    background: url(../images/next_right.png) no-repeat;
+}
+.technique .arcodian a{
+    color:#fff;
+}
+.technique .arcodian a:hover .arcodianTxt{
+    opacity: 1;
+} 
+/* 뉴스영역 */
+.news{
+    position: relative;
+    top:100px;
+    opacity: 0;
+    transition: all .7s ease-out;
+}
+.news::after, .news::before{
+    content:'';
+    display: block;
+    position: absolute;
+    width:350px;
+    height:450px;
+    background: #039;
+    opacity: .1;
+    transform: skew(-20deg);
+    left:30%;
+    top:30%;
+    z-index: -1;
+}
+.news::before{
+    left:55%;
+    top:55%;
+    transform: skew(20deg);
+}
+.news .headingText{
+    width:1200px;
+    margin:100px auto;
+    text-align: center;
+}
+.newsBox{
+    width:1200px;
+    overflow: hidden;
+    position: relative; left: 50%; top: 0; margin-left: -650px;
+    padding:10px 50px 100px 50px;
+    display: grid;
+    grid-template-areas:
+    'a c e'
+    'b d f';
+    gap:25px;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+}
+.newsBox li{
+    background: #fff;
+    border:1px solid #fff;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+    transition: all .3s ease-out;
+    position:relative;
+}
+.newsBox li:nth-of-type(1){grid-area: a;}
+.newsBox li:nth-of-type(2){grid-area: b;}
+.newsBox li:nth-of-type(3){grid-area: c;}
+.newsBox li:nth-of-type(4){grid-area: d;}
+.newsBox li:nth-of-type(5){grid-area: e;}
+.newsBox li:nth-of-type(6){grid-area: f;}
+.newsBox li:hover{
+    border:1px solid #039;
+}
+
+
+.newsBox dl{
+    overflow: hidden;
+    padding:30px 20px 100px 20px;
+}
+.newsBox dt{
+    font-size: 1.250em;
+    color:#039;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.newsBox dd{
+    line-height: 2em;
+    font-weight: 500;
+}
+.newsBox span{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    color:#999
+}
+.newsBox div a{
+    color:#666;
+    transition:all .3s ease-out;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+.newsBox a{
+    opacity: 0;
+    transition: all .3s ease-out;
+    border-radius: 25px;
+    padding:10px 15px;
+}
+.newsBox div:hover a{
+    opacity: 1;
+    color:#039;
+}
+.newsBox div:hover a:hover{
+    border-radius: 25px;
+    background: #06c;
+    color:#fff;
+}
+.news>a{
+    position: absolute;
+    right:22%;
+    top:23%;
+    margin-right: -50px;
+    height:50px;
+    width:50px;
+    border: 0 solid #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px rgba(0,0,0,.2);
+    text-align: center;
+    color:#039;
+}
+.news>a i{
+    margin-top: 17.5px;
+    transform: rotate(0);
+    transition: all .3s ease-out;
+    font-size: 0.938em;
+}
+.news>a:hover i{
+    transform: rotate(90deg);
+}
+/* 경영영역 */
+.value{
+    background: #f9f9f9;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    transition: all .7s ease-out;
+}
+.value .headingText{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    padding:100px 0 0 ;
+}
+.value ul{
+    overflow:hidden;
+    position: relative;
+    width:1200px;
+    left:50%;
+    margin-left: -600px;
+    padding:100px 0;
+}
+.value ul li{
+    float:left;
+    width: 150px;
+    margin-right: 110px;
+    position: relative;
+    opacity: 0;
+    top:20px;
+    transition: all .5s ease-out;
+}
+.value ul li:nth-of-type(1){transition-delay: .7s;}
+.value ul li:nth-of-type(2){transition-delay: .9s;}
+.value ul li:nth-of-type(3){transition-delay: 1.1s;}
+.value ul li:nth-of-type(4){transition-delay: 1.3s;}
+.value ul li:nth-of-type(5){transition-delay: 1.5s;}
+.value ul li:last-child{
+    margin-right: 0;
+}
+.value ul li a img{
+    width:150px;
+    border:1px solid #fff;
+    border-radius: 25px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+    filter:grayscale(0);
+    transition: all .3s ease-out;
+}
+.value ul li a:hover img{
+    border:1px solid #333;
+    filter:grayscale(1)
+}
+.value span{
+    display: block;
+    text-align: center;
+    font-size: 1.563em;
+    font-weight: 500;
+    transition:all .3s ease-out;
+    margin-top: 30px;
+}
+.value a:hover span{
+    color:#039;
+}
+.recruit{}
+.recruit .headingText{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    padding:100px 0 50px;
+}
+.recruit .imgCon{
+    height:400px;
+    background-attachment: fixed;
+    background-image: url(../images/recruit.jpg);
+    color:#fff;
+    position: relative;
+}
+.recruit .imgCon dl{
+    position: absolute;
+    width:680px;
+    height:200px;
+    left:20%;
+    top:20%;
+}
+.recruit dl dt{
+    font-size: 4.375em;
+    font-weight: 700;
+}
+.recruit dl dd{
+    font-size: 1.563em;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.recruit .imgCon a{
+    position: absolute;
+    right:50%;
+    top:230px;
+    margin-right: -500px;
+    color:#fff;
+    font-size: 1.125em;
+    font-weight: 500;
+}
+.recruit .imgCon a i{
+    margin-left:30px;
+}
+.recruit .imgCon a{
+    color:#fff;
+    transition: all .3s ease-out;
+}
+.recruit .imgCon a:hover{
+    color:#039
+}
+
+/* 효과 */
+.opacityLeftOn{
+    opacity: 1 !important;
+    left:50% !important;
+}
+.topOpacityOn{
+    top:0 !important;
+    opacity:1 !important;
+}

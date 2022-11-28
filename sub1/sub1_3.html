@@ -1,0 +1,208 @@
+<? session_start() ?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-오시는길</title>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub1common.css">
+    <link rel="stylesheet" href="./css/sub1_content3.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+    <script src="./js/map.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=062bb434d49a6673c3a0d3db8a45ea7a"></script>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+        <div class="main">
+            <img src="./common/images/main.jpg" alt="">
+            <h3>회사소개</h3>
+        </div>
+        
+        <div class="subNav">
+            <ul>
+                <li><a href="./sub1_1.html">기업정보</a></li>
+                <li><a href="./sub1_2.html">조선소소개</a></li>
+                <li><a class="current" href="#">오시는길</a></li>
+                <li><a href="./sub1_4.html">연혁</a></li>
+            </ul>
+        </div>
+
+        <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span>home</span>&gt;<span>회사소개</span>&gt;<strong>오시는길</strong>
+                </div>
+                <h2>오시는길</h2>
+                <dl>
+                    <dt>국내 사업장</dt>
+                    <dd>삼성중공업이 글로벌 경영으로 세계를 향해 나아갑니다</dd>
+                </dl>
+            </div>    
+            <div class="contentArea">
+                <div class="conTop">
+                    <ul>
+                        <li><a class="subTabNavs subTabNav1" href="#">판교 R&D 센터</a></li>
+                        <li><a class="subTabNavs subTabNav2" href="#">거제 조선소</a></li>
+                        <li><a class="subTabNavs subTabNav3" href="#">대덕연구소</a></li>
+                    </ul>
+                </div>
+                <div class="conMid">
+                    <ul>
+                        <li class="subMap">
+                            <h3 class="hidden">판교 R&D 센터</h3>
+                            <div id="map1"></div>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <dl>
+                                        <dt>오시는길</dt>
+                                        <dd>성남 분당구 판교로 227-23</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <dl>
+                                        <dt>전화</dt>
+                                        <dd>031-5171-7000</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-fax"></i>
+                                    <dl>
+                                        <dt>팩스</dt>
+                                        <dd>031-5171-7000</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <dl>
+                                        <dt>메일</dt>
+                                        <dd>www.samsungshi.com</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="subMapEx">
+                            <div class="way">
+                            <p>찾아오시는 길</p>
+                            <dl>
+                                <dt>버스</dt>
+                                <dd>실리콘파크 <i class="fa-solid fa-bus"></i><span> 지선 </span>602 602A 603 603</dd>
+                                <dd>우주공원역 <i class="fa-solid fa-bus"></i><span> 간선 </span>602 602-A</dd>
+                            </dl>
+                            <dl>    
+                                <dt>자가용</dt>
+                                <dd>삼성중공업 판교 R&D센터 검색 판교IC출구 붓돌 저류지 공원 직진</dd>
+                                <dd>판교 디지털 센터 좌회전 삼성중공업 R&D 센터 우회전  </dd>
+                            </dl>
+                            </div>
+                        </li>
+                        <li class="subMap">
+                            <h3 class="hidden">거제 조선소</h3>
+                            <div id="map2"></div>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <dl>
+                                        <dt>오시는길</dt>
+                                        <dd>성경상남도 거제시 장평3로 80</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <dl>
+                                        <dt>전화</dt>
+                                        <dd>055-630-3114</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-fax"></i>
+                                    <dl>
+                                        <dt>팩스</dt>
+                                        <dd>055-630-3114</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <dl>
+                                        <dt>메일</dt>
+                                        <dd>www.samsungshi.com</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>  
+                        <li class="subMapEx">
+                            <div class="way">
+                                <p>찾아오시는 길</p>
+                                <dl>
+                                    <dt>버스</dt>
+                                    <dd>신주공APT <i class="fa-solid fa-bus"></i><span> 지선 </span>110 110-1 111 113</dd>
+                                    <dd>장평동초교 <i class="fa-solid fa-bus"></i><span> 간선 </span>705 802</dd>
+                                </dl>
+                                <dl>    
+                                    <dt>자가용</dt>
+                                    <dd>삼성중공업 거제조선소 검색 거제 톨게이트 장평동 방면 좌회전</dd>
+                                    <dd>고현사거리 직진 거제 삼성 호텔 방면 우회전  </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="subMap">
+                            <h3 class="hidden">대덕연구소</h3>
+                            <div id="map3"></div>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <dl>
+                                        <dt>오시는길</dt>
+                                        <dd>대전광역시 유성구 문지로 217</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <dl>
+                                        <dt>전화</dt>
+                                        <dd>042-865-4300</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-fax"></i>
+                                    <dl>
+                                        <dt>팩스</dt>
+                                        <dd>042-865-4300</dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <dl>
+                                        <dt>메일</dt>
+                                        <dd>www.samsungshi.com</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="subMapEx">
+                            <div class="way">
+                                <p>찾아오시는 길</p>
+                                <dl>
+                                    <dt>버스</dt>
+                                    <dd>문지네거리 <i class="fa-solid fa-bus"></i><span> 지선 </span>121 918 124 915</dd>
+                                    <dd>헤링턴APT <i class="fa-solid fa-bus"></i><span> 간선 </span>705 802</dd>
+                                </dl>
+                                <dl>    
+                                    <dt>자가용</dt>
+                                    <dd>삼성대덕연구센터 검색 북대전 톨게이트 유성방면 좌회전</dd>
+                                    <dd>도룡삼거리 직진 문지네거리'대덕대로,원촌삼거리' 방면 우회전</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/maptabnav.js"></script>
+</body>
+</html>

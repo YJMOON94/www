@@ -1,0 +1,212 @@
+.contentArea{
+    width:1200px;
+    margin:0 auto
+}
+.contentArea img{
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+}
+.conTop{
+    text-align: justify;
+}
+.conTop div{
+    overflow:hidden;
+    padding-bottom: 100px;
+    top:100px;
+    position: relative;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.conTop div img{
+    float:left
+}
+.conTop h3{
+    font-size: 2.5em;
+    padding:30px 0 0 550px;
+    position: relative;
+}
+.conTop h3::after{
+    content:'';
+    position: absolute;
+    width:300px;
+    height:3px;
+    background: #039;
+    top:50px;
+    right:50px
+}
+.conTop p{
+    font-size: 1.25em;
+    padding:80px 0 0 550px
+}
+.conTop ul{
+    overflow:hidden;
+    box-sizing: border-box;
+    padding:15px
+}
+.conTop dl, .conMid dl{
+    width:500px;
+    height:500px;
+    padding:30px 0
+}
+.leftCon{
+    float:left
+}
+.rightCon{
+    float:right
+}
+.conTop dt, .conMid dt{
+    font-size: 2em;
+    padding-bottom: 30px;
+    font-weight: 500;
+    color:#039
+}
+.conTop dd, .conMid dd{
+    font-size: 1.25em;
+}
+.leftCon li{
+    position: relative;
+    opacity: 0;
+    transition: all .5s ease-out;
+    left:-20%;
+}
+.rightCon li{
+    position: relative;
+    opacity: 0;
+    transition: all .5s ease-out;
+    left:20%;
+}
+.conMid{}
+.conMid .leftCon{
+    position: relative;
+    opacity: 0;
+    transition: all .5s ease-out;
+    left:-20%;
+}
+.conMid .rightCon{
+    position: relative;
+    opacity: 0;
+    transition: all .5s ease-out;
+    left:20%;
+}
+.conMid div{
+    overflow:hidden;
+    padding-bottom: 100px;
+    position: relative;
+    opacity: 0;
+    transition: all .5s ease-out;
+    top:100px;
+}
+.conMid div img{
+    float:right;
+    box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+}
+.conMid div h3, .conMid div p{
+    text-align: right;
+}
+.conMid h3{
+    font-size: 2.5em;
+    padding:30px 550px 0 0;
+    position: relative;
+}
+.conMid h3::before{
+    content:'';
+    position: absolute;
+    width:300px;
+    height:3px;
+    background: #039;
+    top:50px;
+    left:50px
+}
+.conMid p{
+    font-size: 1.25em;
+    padding:80px 550px 0 0
+}
+.conMid ul{
+    overflow:hidden;
+    box-sizing: border-box;
+    padding:15px;
+}
+.conBtm{
+    margin-bottom: 100px;
+    opacity: 0;
+    position: relative;
+    top:100px;
+    transition: all .5s ease-out;
+}
+.conBtm div{
+    background:url(../images/content2/solution03_01.jpg) center center no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    width:1920px;
+    height:200px;
+    position: relative;
+    left:50%;
+    top:0;
+    margin-left: -960px;
+}
+.conBtm h3{
+    margin:100px 0 30px 0;
+    font-size: 2.5em;
+    position: relative;
+}
+.conBtm h3::after{
+    content:'';
+    position: absolute;
+    width:300px;
+    height:3px;
+    background: #039;
+    top:20px;
+    right:450px
+}
+.conBtm p{
+    font-size: 1.25em;
+    margin-left: 30px;
+}
+.chart{
+    position: relative;
+    left:50%;
+    top:100px;
+    background: #f9f9f9;
+    width:2000px;
+    margin-left: -1000px;
+    padding:50px 0;
+    margin-bottom: 200px;
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+.chart ul{
+    overflow:hidden;
+    width:1200px;
+    margin:0 auto;
+}
+.chart ul li{
+    width:298px;
+    height:298px;
+    border-bottom:3px solid #039;
+    border-radius: 300px;
+    box-sizing: border-box;
+    padding:30px;
+    float:left;
+    text-align: center;
+}
+.chart ul li:nth-child(odd){
+    border-bottom: 0;
+    border-top:3px solid #039
+}
+.chart p{
+    padding-bottom:50px;
+    font-size: 1.75em;
+    color:#06c;
+    font-weight: 500;
+}
+.chart span{
+    display: block;
+    font-size: 1.25em;
+}
+.opacityLeftOn{
+    opacity: 1 !important;
+    left:0 !important;
+}
+.topOpacityOn{
+    top:0 !important;
+    opacity:1 !important;
+}

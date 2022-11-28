@@ -1,0 +1,134 @@
+/* 연도박스 */
+.conTop{
+    width:1200px;
+    border:1px solid #ccc;
+    font-size: 1.563em;
+    font-weight: 500;
+    text-align: center;
+    margin:0 auto;
+}
+.conTop ul{
+    overflow:hidden
+}
+.conTop ul li{
+    float:left;
+    width:25%;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.conTop ul li:last-child{
+    border:none;
+}
+.conTop ul li a{
+    padding: 30px 0;
+}
+.conTop ul li a:hover{
+    color:#039
+}
+.conTab{
+    transition: all .3s ease-out;
+}
+.conTopOn{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(33,100,200,.9);
+    z-index: 100;
+}
+.conTopOn .conTop{
+    border:0;
+}
+.conTopOn .conTop ul li{
+    border:none;
+}
+.conTopOn .conTop ul li a{
+    color:#fff;
+    transition: all .3s ease-out;
+}
+.conTopOn .conTop ul li a:hover{
+    background: #fff;
+    color:#039;
+}
+.conTopOn .conTop ul li a.onSelect{
+    background:#fff;
+    color:#039;
+}
+/* 이미지 */
+.conBtm .year2022 ul{position: relative;}
+
+.conBtm .year2022 li:first-child{background: url(../images/content4/year01.jpg) bottom no-repeat;}
+.conBtm .year2019 li:first-child{background: url(../images/content4/year02.jpg) bottom no-repeat;}
+.conBtm .year2010 li:first-child{background: url(../images/content4/year03.jpg) no-repeat;}
+.conBtm .year2000 li:first-child{background: url(../images/content4/year04.jpg) bottom no-repeat;}
+
+.conBtm .year2022 li:first-child,
+.conBtm .year2019 li:first-child,
+.conBtm .year2010 li:first-child,
+.conBtm .year2000 li:first-child{
+    width:2000px;
+    height:300px;
+    background-attachment: fixed;
+    position:relative;
+    left:50%;
+    top:0;
+    margin-left: -1000px;
+}
+.year2000, .year2010, .year2019, .year2022{
+    margin-top: 200px;
+}
+.blueBox{
+    width:500px;
+    height:250px;
+    background: linear-gradient(90deg, rgba(00,33,99,1), rgba(33,66,200,.9));
+    position: absolute;
+    bottom:-150px;
+    left:50%;
+    margin-left: -600px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.3);
+}
+.contentArea h3{
+    margin-top: 80px;
+    color:#fff;
+    font-size: 2.5em;
+    position: relative;
+}
+.contentArea p{
+    color:#fff;
+    margin-top: 50px;
+}
+.contentArea h3::before{
+    content:'samsung heavy industry';
+    position:absolute;
+    top:-60px;
+    left:0;
+    opacity: .5;
+    font-size: .5em;
+}
+.contentArea h3, .contentArea p{
+    margin-left: 30px;
+}
+.textBox{
+    margin-left: 600px;
+    overflow:hidden;
+    font-weight: 500;
+    margin-top: 100px;
+}
+.textBox dt{
+    float:left;
+    font-size: 2.5em;
+    height:295px;
+    margin-right: 50px;
+}
+.textBox dd{
+    float:left;
+    font-size: 1.250em;
+    margin-top: 30px;
+}
+.textBox span{
+    color:#06c
+}
+.conBtm>ul{
+    margin-bottom: 100px;
+}

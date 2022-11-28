@@ -1,0 +1,75 @@
+.contentArea{
+    width:1200px;
+    margin:0 auto;
+}
+.qna{
+    
+}
+.qna>ul{
+    margin-bottom: 100px;
+}
+.qna .topText .all{
+    width:64px;
+    height:64px;
+    background: url(../images/up.png)no-repeat;
+    margin:0 auto 80px;
+}
+.qna>ul>li{
+    border-radius: 25px;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+    padding-right:100px;
+}
+.qna .article{
+    transition: background .3s ease-out;
+}
+.qna .question{
+    position: relative;
+}
+.qna .question::before{
+    content:'';
+    display: block;
+    position: absolute;
+    left:70px;
+    top:50px;
+    width:40px;
+    height:40px;
+    background: url(../images/search.png) no-repeat;
+    background-size: 40px;
+}
+.qna .question a{
+    font-size: 1.5em;
+    font-weight: 500;
+    padding: 50px 0 50px 180px;
+    position: relative;
+    z-index: 10;
+}
+.qna .answer{
+    display: none;
+    padding-left: 200px;
+    font-size: 1.125em;
+}
+.qna .answer a{
+    display: inline;
+    transition: color .3s ease-out;
+}
+.qna .answer a:hover{
+    color:#06c
+}
+.qna .answer dt{
+    color:#06c;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.qna .answer dd:last-child{
+    padding-bottom: 50px;
+}
+.qna .answer dd p{
+    margin-bottom: 30px;
+    color:#039
+}
+.qna .answer dd ul li{
+    list-style:decimal;
+    list-style-position: inside;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,51 @@
+<? session_start() ?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content4.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+    <title>고객센터-일정</title>
+</head>
+<body>
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+        <img src="./common/images/main.jpg" alt="">
+        <h3>고객센터</h3>
+    </div>
+    <div class="subNav">
+        <ul>
+            <li><a href="../concert/list.php">뉴스</a></li>
+            <li><a href="../greet/list.php">자료실</a></li>
+            <li><a href="./sub6_3.html">QnA</a></li>
+            <li><a class="current" href="./sub6_4.html">일정</a></li>
+        </ul>
+    </div>
+    <article id="content">
+        <div class="titleArea">
+            <div class="lineMap">
+                <span>home</span>&gt;<span>고객센터</span>&gt;<strong>일정</strong>
+            </div>
+            <h2>일정</h2>
+            <dl>
+                <dt>삼성중공업의 모든 일정은 고객을 중심으로 정해집니다.</dt>
+                <dd>자체기술력과 생산능력으로 세계1위 생산량의 거의 모두를 수출하는 딜러박스 세계최고 수준의 인력과 실비 모두 대한민국의 오늘입니다.</dd>
+            </dl>
+        </div>
+        <div class="contentArea">
+            <div id='calendar'></div>
+        </div>
+    </article>
+
+    <? include "../common/sub_footer.html" ?>
+    <script src="./js/main.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

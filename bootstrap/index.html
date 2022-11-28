@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Geographic</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <script
+      src="https://kit.fontawesome.com/8bd50518e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // <![CDATA[
+      try {
+        window.addEventListener(
+          "load",
+          function () {
+            setTimeout(scrollTo, 0, 0, 1);
+          },
+          false
+        );
+      } catch (e) {}
+      //
+    </script>
+  </head>
+  <body>
+    <div id="skipNav">
+      <a href="#content">본문 바로가기</a>
+      <a href="#navbar">글로벌 네비게이션 바로가기</a>
+    </div>
+    <h1 class="hidden">National geographic</h1>
+    <div class="container-fluid">
+      <header id="headerArea">
+        <nav
+          class="navbar navbar-default navbar-fixed-top nav-container"
+          role="navigation"
+        >
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle navBtn"
+                data-toggle="collapse"
+                data-target=".navbar-ex1-collapse"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand navImg" href="#"
+                ><img src="./images/logo/logo.png" alt="logo"
+              ></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <h2 class="hidden">global navigation</h2>
+              <ul class="nav navbar-nav navbar-right topnav">
+                <li>
+                  <a href="#animal" class="navAnimal">
+                    <h3>Animals</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="#phenomenon" class="navPhenomenon">
+                    <h3>Phenomenon</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="#video" class="navVideo">
+                    <h3>Video</h3>
+                  </a>
+                </li>
+                <li>
+                  <a href="#country" class="navCountry">
+                    <h3>Country</h3>
+                  </a>
+                </li>
+                <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle"
+                                data-toggle="dropdown">드롭다운 <b class="caret"></b></a> <ul class="dropdown-menu">
+                                <li><a href="#">서브메뉴 1</a></li> <li><a href="#">서브메뉴 2</a></li> <li><a
+                                href="#">서브메뉴 3</a></li> </ul> </li> -->
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+        </nav>
+      </header>
+
+      <div class="main_visual">
+        <!-- <div class="container-fluid"> -->
+        <div id="carousel-example-generic" class="carousel slide carousel-fade">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel-example-generic"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="./images/main/main01.jpg" alt="First slide">
+              <dl class="mainText">
+                <dt>National Geographic nature</dt>
+                <dd>about nature</dd>
+              </dl>
+              <div class="page-number"><span>01</span>/ 03</div>
+            </div>
+            <div class="item">
+              <img src="./images/main/main02.jpg" alt="Second slide">
+              <dl class="mainText">
+                <dt>National Geographic phenomenon</dt>
+                <dd>about country</dd>
+              </dl>
+              <div class="page-number"><span>02</span>/ 03</div>
+            </div>
+            <div class="item">
+              <img src="./images/main/main03.jpg" alt="Third slide">
+              <dl class="mainText">
+                <dt>National Geographic country</dt>
+                <dd>about phenomenon</dd>
+              </dl>
+              <div class="page-number"><span>03</span>/ 03</div>
+            </div>
+          </div>
+          <!-- Controls -->
+          <a
+            class="left carousel-control"
+            href="#carousel-example-generic"
+            data-slide="prev"
+          >
+            <div class="btn-lr">
+              <img src="./images/main/left-arrow.png" alt="preview">
+            </div>
+          </a>
+          <a
+            class="right carousel-control"
+            href="#carousel-example-generic"
+            data-slide="next"
+          >
+            <div class="btn-lr">
+              <img src="./images/main/right-arrow.png" alt="nextview">
+            </div>
+          </a>
+        </div>
+        <!-- </div> -->
+        <div class="scrollDown">
+          <a href="#animal" class="scrollInner"
+            ><i class="fa-solid fa-angles-down"></i
+            ><span class="hidden">scrolldown</span></a
+          >
+        </div>
+      </div>
+
+      <article id="content">
+        <h2 class="hidden">main content area</h2>
+        <section class="animals" id="animal">
+          <h3 class="hidden">about animals</h3>
+          <div class="sectionHeader">
+            <dl>
+              <dt>Animals</dt>
+              <dd>
+                national geographic capture beautiful Moment various animals in
+                the world
+              </dd>
+            </dl>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#myModal" data-toggle="modal" class="imgBox"></a>
+                <p>Fox</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal" data-toggle="modal" class="imgBox"></a>
+                <p>Dolphin</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal" data-toggle="modal" class="imgBox"></a>
+                <p>Owl</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal" data-toggle="modal" class="imgBox"></a>
+                <p>Cat</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal" data-toggle="modal" class="imgBox"></a>
+                <p>Tiger</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal" data-toggle="modal" class="imgBox"></a>
+                <p>Penguin</p>
+              </div>
+              <div class="swiper-slide">
+                <a href="#myModal" data-toggle="modal" class="imgBox"></a>
+                <p>Squirrel</p>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="myModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">
+                  <span aria-hidden="true">&times;</span
+                  ><span class="sr-only">Close</span>
+                </button>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6">
+                    <img src="./images/animals/animal01.jpg" alt="">
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <h4 class="modal-title" id="myModalLabel">Fox</h4>
+                    <dl class="getAnimalData">
+                      <dt><strong>other name : arctic fox</strong></dt>
+                      <dd>
+                        Characteristic : Arctic foxes must endure a temperature
+                        difference of up to 90–100 °C (160–180 °F) between the
+                        external environment and their internal core
+                        temperature.
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 모달 콘텐츠 -->
+          </div>
+          <!-- 모달 다이얼로그 -->
+          <!-- </div> -->
+          <!-- 모달 전체 윈도우 -->
+        </section>
+
+        <section class="phenomenon" id="phenomenon">
+          <h3 class="hidden">about phenomenon</h3>
+          <div class="sectionHeader">
+            <dl>
+              <dt>Phenomenon</dt>
+              <dd>
+                national geographic capture beautiful Moment various phenomenon
+                in the world
+              </dd>
+            </dl>
+          </div>
+
+          <div class="container-fluid phenomenonImgBox">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="img1"></div>
+                <dl>
+                  <dt>Lagoon</dt>
+                  <dd>
+                    Manialtepec Lagoon, Oaxaca About a fifteen minute drive from
+                    Puerto Escondido, you will find this magical lagoon
+                    transforms during the night into an infinite pool of light.
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-lg-6 hidden-md">
+                <div class="img2"></div>
+                <dl>
+                  <dt>Aurora</dt>
+                  <dd>
+                    Frequently there are beautiful light shows in the sky. These
+                    lights are called auroras. If you're near the North Pole, it
+                    is called an aurora borealis or northern lights.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 hidden-sm hidden-xs">
+                <div class="img3"></div>
+                <dl>
+                  <dt>Total solar eclipsemoon</dt>
+                  <dd>
+                    During a total eclipse of the Sun, the Moon covers the
+                    entire disk of the Sun. In partial and annular solar
+                    eclipses, the Moon blocks only a part of the Sun.
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-lg-4 col-md-6 hidden-sm hidden-xs">
+                <div class="img4"></div>
+                <dl>
+                  <dt>Thunderstorm</dt>
+                  <dd>
+                    hunderstorm, a violent short-lived weather disturbance that
+                    is almost always associated with lightning, thunder, dense
+                    clouds, heavy rain or hail, and strong gusty winds.
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-lg-4 hidden-md hidden-sm hidden-xs">
+                <div class="img5"></div>
+                <dl>
+                  <dt>Wave</dt>
+                  <dd>
+                    wave, a ridge or swell on the surface of a body of water,
+                    normally having a forward motion distinct from the
+                    oscillatory motion of the particles that successively
+                    compose it.
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="video" id="video">
+          <h3 class="hidden">about video</h3>
+          <div class="sectionHeader">
+            <dl>
+              <dt>Video</dt>
+              <dd>
+                national geographic capture beautiful Moment in the world and
+                make them to video
+              </dd>
+            </dl>
+          </div>
+
+          
+          <div class="container videoInner">
+            <div class="tabmenu">
+              <ul>
+                <li><a href="#">Lions</a></li>
+                <li><a href="#">Whale</a></li>
+                <li><a href="#">Penguin</a></li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="youtubeBox">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/FK3dav4bA4s"
+                    title="YouTube video player"
+                    frameborder=”0″
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen="allowfullscreen"
+                  ></iframe>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <dl class="videoText">
+                  <dt>Lions</dt>
+                  <dd>
+                    White Lion was an American glam metal band that was formed
+                    in
+                  </dd>
+                  <dd>
+                    New York City in 1983 by Danish vocalist and guitarist Mike
+                  </dd>
+                  <dd>Tramp and American guitarist Vito Bratta.</dd>
+                </dl>
+                <div class="subVideoBox">
+                  <div class="col-lg-4">
+                    <div class="subVideo lion subV1"></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subVideo lion subV2"></div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="subVideo lion subV3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="country" id="country">
+          <h3 class="hidden">about country</h3>
+          <div class="sectionHeader">
+            <dl>
+              <dt>Country</dt>
+              <dd>
+                national geographic capture beautiful Moment in the world and
+                make them to video
+              </dd>
+            </dl>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 countryImgBox">
+                <div class="countryImgBoxInner">
+                  <img src="./images/country/country01.jpg" alt="">
+                  <dl>
+                    <dt>Nepal</dt>
+                    <dd>OFFICIAL NAME: Federal Republic of Brazil</dd>
+                    <dd>CAPITAL: Brasilia</dd>
+                    <dd>POPULATION: 208,846,892</dd>
+                    <dd>OFFICIAL LANGUAGE: Portuguese</dd>
+                    <dd>MONEY: Real</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="col-lg-4 hidden-md hidden-sm hidden-xs countryImgBox">
+                <div class="countryImgBoxInner">
+                  <img src="./images/country/country02.jpg" alt="">
+                  <dl>
+                    <dt>France</dt>
+                    <dd>OFFICIAL NAME: Federal Republic of France</dd>
+                    <dd>CAPITAL: France</dd>
+                    <dd>POPULATION: 456,234,374</dd>
+                    <dd>OFFICIAL LANGUAGE: France</dd>
+                    <dd>MONEY: Real</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 hidden-sm hidden-xs countryImgBox">
+                <div class="countryImgBoxInner">
+                  <img src="./images/country/country03.jpg" alt="">
+                  <dl>
+                    <dt>Greenland</dt>
+                    <dd>OFFICIAL NAME: Greenland</dd>
+                    <dd>CAPITAL: Greenland</dd>
+                    <dd>POPULATION: 453,345,623</dd>
+                    <dd>OFFICIAL LANGUAGE: Greenland</dd>
+                    <dd>MONEY: Real</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-6 hidden-sm hidden-xs countryImgBox">
+                <div class="countryImgBoxInner">
+                  <img src="./images/country/country04.jpg" alt="">
+                  <dl>
+                    <dt>Ireland</dt>
+                    <dd>OFFICIAL NAME: Ireland</dd>
+                    <dd>CAPITAL: Ireland</dd>
+                    <dd>POPULATION: 435,456,124</dd>
+                    <dd>OFFICIAL LANGUAGE: Ireland</dd>
+                    <dd>MONEY: Real</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="col-lg-4 hidden-md hidden-sm hidden-xs countryImgBox">
+                <div class="countryImgBoxInner">
+                  <img src="./images/country/country05.jpg" alt="">
+                  <dl>
+                    <dt>Jamaica</dt>
+                    <dd>OFFICIAL NAME: Jamaica</dd>
+                    <dd>CAPITAL: Jamaica</dd>
+                    <dd>POPULATION: 108,846,345</dd>
+                    <dd>OFFICIAL LANGUAGE: English</dd>
+                    <dd>MONEY: Real</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 countryImgBox countryListBox">
+                <div class="countryImgBoxInner">
+                  <p>Other Country</p>
+                  <ul>
+                    <li>
+                      <button
+                        type="button"
+                        class="btn btn-default popover-hide"
+                        title=""
+                        data-container="body"
+                        data-toggle="popover"
+                        data-placement="top"
+                        data-content="
+                                          <img src='./images/country/country06.jpg'>
+                                          <dl>
+                                            <dt>Norway</dt>
+                                            <dd>OFFICIAL NAME: Norway</dd>
+                                            <dd>CAPITAL: Norway</dd>
+                                            <dd>POPULATION: 11,846,345</dd>
+                                            <dd>OFFICIAL LANGUAGE: English</dd>
+                                            <dd>MONEY: Real</dd>
+                                        </dl>"
+                      >
+                        Norway
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="btn btn-default popover-hide"
+                        title=""
+                        data-container="body"
+                        data-toggle="popover"
+                        data-placement="top"
+                        data-content="
+                                        <img src='./images/country/country07.jpg'>
+                                        <dl>
+                                          <dt>India</dt>
+                                          <dd>OFFICIAL NAME: India</dd>
+                                          <dd>CAPITAL: India</dd>
+                                          <dd>POPULATION: 108,331,345</dd>
+                                          <dd>OFFICIAL LANGUAGE: English</dd>
+                                          <dd>MONEY: Real</dd>
+                                      </dl>"
+                      >
+                        India
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="btn btn-default popover-hide"
+                        title=""
+                        data-container="body"
+                        data-toggle="popover"
+                        data-placement="top"
+                        data-content="
+                                        <img src='./images/country/country08.jpg'>
+                                        <dl>
+                                          <dt>Philippines</dt>
+                                          <dd>OFFICIAL NAME: Philippines</dd>
+                                          <dd>CAPITAL: Philippines</dd>
+                                          <dd>POPULATION: 23,846,123</dd>
+                                          <dd>OFFICIAL LANGUAGE: English</dd>
+                                          <dd>MONEY: Real</dd>
+                                        </dl>"
+                      >
+                        Philippines
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        class="btn btn-default popover-hide"
+                        title=""
+                        data-container="body"
+                        data-toggle="popover"
+                        data-placement="top"
+                        data-content="
+                                        <img src='./images/country/country09.jpg'>
+                                        <dl>
+                                          <dt>Brazil</dt>
+                                          <dd>OFFICIAL NAME: Brazil</dd>
+                                          <dd>CAPITAL: Brazil</dd>
+                                          <dd>POPULATION: 443,846,345</dd>
+                                          <dd>OFFICIAL LANGUAGE: English</dd>
+                                          <dd>MONEY: Real</dd>
+                                        </dl>"
+                      >
+                        Brazil
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <footer id="footerArea">
+        <div class="footerInner">
+          <div class="container">
+            <div class="col-lg-2">
+              <a class="footerLogo" href="#"
+                ><img src="./images/logo/logo.png" alt="logo"
+              ></a>
+            </div>
+            <div class="col-lg-2 col-lg-offset-2 col-md-3">
+              <ul>
+                <li><strong>FOLLOW US</strong></li>
+                <li class="snsBox">
+                  <span><i class="fa-brands fa-square-facebook"></i></span>
+                  <span><i class="fa-brands fa-twitter"></i></span>
+                  <span><i class="fa-brands fa-instagram"></i></span>
+                </li>
+                <li>
+                  <img
+                    class="americaLogo"
+                    src="./images/logo/us.png"
+                    alt="america"
+                  >United states
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12">
+              <ul>
+                <li><strong>LEGAL</strong></li>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+                <li>Interest-Based Ads</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12">
+              <ul>
+                <li><strong>OUR SITES</strong></li>
+                <li>Nat Geo Home</li>
+                <li>Attend a Live Event</li>
+                <li>Book a Trip</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-12">
+              <ul>
+                <li><strong>JOIN US</strong></li>
+                <li>Subscribe</li>
+                <li>Customer Service</li>
+                <li>Renew Subscription</li>
+              </ul>
+            </div>
+          </div>
+          <div class="container">
+            <p>
+              Copyright &copy; 1996-2015 National Geographic SocietyCopyright
+              &copy; 2015-2022 National Geographic Partners, LLC. All rights
+              reserved
+            </p>
+          </div>
+          <div class="moveTop">
+            <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      $(".carousel").carousel();
+      // $(function () { $('.popover-hide').popover('hide');});
+      $(function () {
+        $(".popover-hide").popover({ html: true });
+      });
+    </script>
+  </body>
+</html>

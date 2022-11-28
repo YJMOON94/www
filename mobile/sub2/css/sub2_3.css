@@ -1,0 +1,147 @@
+.titleArea{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.titleArea h2{
+    font-size: 1.786rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.titleArea dl{
+    padding:0 20px
+}
+.titleArea dl dt{
+    font-size: 1.429rem;
+    margin-bottom: 20px;
+}
+.titleArea dl dd{
+    color: #999
+}
+#content{
+    width:100%;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+.conTop{}
+.conTop h3{
+    font-size: 1.786rem;
+    font-weight: 700;
+    display: inline-block;
+}
+.conTop>span i{
+    font-size: 1.786rem;
+    margin-right: 10px;
+}
+.conTop ul{
+    margin-top: 50px;
+}
+.conTop ul li{
+    margin-bottom: 50px;
+    padding:15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+.conTop ul li i{
+    font-size: 1.429rem;
+    color: #039;
+    margin-right: 10px;
+}
+.conTop ul li h4{
+    color:#039;
+    font-size: 1.429rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.conTop ul li p{
+    text-align: justify;
+}
+.conTable{}
+.conTable table .borderNone{
+    border:none;
+}
+.conTable caption{
+    text-align: left;
+    font-size: 1.429em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.conTable table{
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    width:100%;
+    border-collapse: collapse;
+}
+.conTable table tr{
+    border-top: 1px solid #ccc;
+}
+.conTable table tr:nth-child(odd){
+    background: #f3f3f3;
+}
+.conTable table:nth-of-type(2) .borderNone{
+    background: #fff;
+}
+.conTable table th{
+    padding:5px;
+    color:#039
+}
+.conTable table:nth-of-type(2) .borderNone th{
+    color:#06c;
+    padding:5px;
+}
+.conTable table td{
+    padding:5px;
+}
+.conMid{}
+.conMid>i{
+    font-size: 1.786rem;
+    margin-right: 10px;
+}
+.conMid h3{
+    display: inline-block;
+    font-size: 1.786rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.conMid p{
+    text-align: justify;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.conMid dl{
+    margin-bottom: 20px;
+}
+.conMid span{
+    display: block;
+    color:#039;
+    font-size: 1.429em;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.conMid dt{
+    font-size: 1.429em;
+    font-weight: 400;
+    color:#06c;
+    margin-bottom: 15px;
+}
+.conMid dd{
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+.conMid dd::before{
+    content:'';
+    display: block;
+    position: absolute;
+    left:-5px;
+    top:0;
+    width: 10px;
+    height:10px;
+    border-radius: 5px;
+    background: #06c;
+}

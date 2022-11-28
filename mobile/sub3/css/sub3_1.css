@@ -1,0 +1,21 @@
+.conBtm ul li:nth-of-type(1) span{
+    background: url(../images/sub03_tecBox.png) no-repeat center center;
+    background-size: cover;
+    display: block;
+    width:100px;
+    height:100px;
+}
+.conBtm ul li:nth-of-type(2) span{
+    background: url(../images/sub03_tecBox2.png) no-repeat center center;
+    background-size: cover;
+    display: block;
+    width:100px;
+    height:100px;
+}
+.conBtm ul li:nth-of-type(3) span{
+    background: url(../images/sub03_tecBox3.png) no-repeat center center;
+    background-size: cover;
+    display: block;
+    width:100px;
+    height:100px;
+}

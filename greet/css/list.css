@@ -1,0 +1,276 @@
+/* layout */
+input{outline: none;}
+input[type="text" i] {
+    padding: 0;
+    border:none;
+    outline:none
+}
+select{border:none; outline: none;}
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+#list_search {
+    display: flex;
+    width: 1000px;
+    box-sizing: border-box;
+    padding: 50px 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.2);
+    font-size: 1.25rem;
+}
+#list_search>div{margin-left: 5%;}
+#list_search #list_search2 {
+    width: 20%;
+    box-sizing: border-box;
+    border:3px solid #06c
+}
+#list_search #list_search3 {
+    width: 59%;
+    box-sizing: border-box;
+    border:3px solid #06c;
+    display: flex;
+    margin-left: 1%;
+}
+#list_search #list_search4 {
+    width: 10%;
+    border:none;
+    margin-left: 0;
+}
+
+#list_search #list_search1 #list_search #list_search2 #list_search #list_search3 #list_search #list_search4 button {
+    width: 100%;
+}
+#list_search #list_search2 select{
+    width:100%;
+    height:50px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+#list_search #list_search3 input{
+    height:50px;
+    width:100%;
+    box-sizing: border-box;
+    padding-left: 10%;
+    font-size: 1.25rem;
+}
+#list_search #list_search4 button{
+    width:100%;
+    height:56px;
+    font-size: 1rem;
+    font-weight: 700;
+    color:#fff;
+    background: #06c;
+    border:none;
+    /* border-radius: 3px; */
+    cursor: pointer;
+}
+
+
+.list_count {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+.list_count #list_count1 span{
+    color:#039;
+    font-weight: 700;
+}
+.list_count #list_count2{
+    width:20%;
+    display: flex;
+}
+.list_count #list_count2 .layout_change{
+    display: inline-block;
+    width:45%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border:1px solid #06c;
+    overflow:hidden;
+}
+.list_count #list_count2 .layout_change a{
+    width:50%; height:50px; float:left; filter:grayscale(1); transition:all .3s
+}
+.list_count #list_count2 .layout_change .layout_change_1{
+    background: rgba(0,0,0,0) url(../icon/button_1.png)no-repeat center;
+}
+.list_count #list_count2 .layout_change .layout_change_2{
+    background: rgba(0,0,0,0) url(../icon/button_2.png)no-repeat center;
+}
+.list_count #list_count2 .layout_change .layout_change_1:hover{
+    background: rgba(0,0,0,.1) url(../icon/button_1.png)no-repeat center;
+}
+.list_count #list_count2 .layout_change .layout_change_2:hover{
+    background: rgba(0,0,0,.1) url(../icon/button_2.png)no-repeat center;
+}
+
+.list_count #list_count2 #scale{
+    width:50%;
+    height:52px;
+    box-sizing: border-box;
+    border:1px solid #06c;
+    padding:0 10px;
+    font-size: 1.25rem;
+}
+
+#list_item,
+#list_top_title ul {
+    display: flex;
+    box-sizing: border-box;
+}
+#list_top_title ul{
+    background: #f3f3f3;
+    padding:30px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-top:2px solid #333;
+    border-bottom:2px solid #333;
+}
+
+#list_item1,
+#list_top_title ul li:nth-of-type(1) {
+    width: 10%;
+}
+#list_item2,
+#list_top_title ul li:nth-of-type(2) {
+    width: 50%;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+#list_top_title ul li:nth-of-type(2){width:50%;}
+#list_item3,
+#list_top_title ul li:nth-of-type(3) {
+    width: 20%;
+}
+#list_item3{
+    color:#039
+}
+#list_item4,
+#list_top_title ul li:nth-of-type(4) {
+    width: 20%;
+}
+#list_item5,
+#list_top_title ul li:nth-of-type(5) {
+    width: 10%;
+}
+#page_num {
+    text-align: center;
+}
+#page_num a {
+    display: inline-block;
+}
+#button {
+    display: flex;
+    justify-content: flex-end;
+}
+#list_item{
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px;
+    border-bottom: 1px solid #999;
+    transition: background .3s;
+    font-size: 1.25rem;
+}
+#list_item1_thumbnail{
+    width:10%;
+}
+#list_item #list_item1_thumbnail img{
+    width:100%;
+}
+#list_item a:hover{
+    text-decoration: underline;
+}
+#list_item:hover{
+    background: rgba(30,60,200,.1);
+}
+#list_item1{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#page_button{
+    margin:50px 0 100px;
+}
+#page_button a{
+    margin:0 3px;
+}
+
+#button a{
+    width:100px;
+    line-height: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+#button a:first-child{background: #06c; color:#fff}
+#button a:last-child{background: #000; color:#fff}
+
+/* layout change button */
+
+#list_content.on{
+    display: grid;
+    grid-template-areas:
+    'a b'
+    'c d'
+    'e f'
+    'g h'
+    'i j'
+    ;
+    gap:20px;
+}
+#list_content.on #list_top_title{
+    display: none;
+}
+#list_content.on #list_item:nth-of-type(1){grid-area: a;}
+#list_content.on #list_item:nth-of-type(1){grid-area: b;}
+#list_content.on #list_item:nth-of-type(1){grid-area: c;}
+#list_content.on #list_item:nth-of-type(1){grid-area: d;}
+#list_content.on #list_item:nth-of-type(1){grid-area: e;}
+#list_content.on #list_item:nth-of-type(1){grid-area: f;}
+#list_content.on #list_item:nth-of-type(1){grid-area: g;}
+#list_content.on #list_item:nth-of-type(1){grid-area: h;}
+#list_content.on #list_item:nth-of-type(1){grid-area: i;}
+#list_content.on #list_item:nth-of-type(1){grid-area: j;}
+
+#list_content.on #list_item{
+    flex-direction: column;
+    align-items: flex-start;
+    border:none;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+}
+#list_content.on #list_item i{opacity: .5;}
+#list_content.on #list_item1{display: none;}
+
+#list_content.on #list_item2{
+    width:100%; padding:0; margin-bottom: 50px;
+}
+#list_content.on #list_item1_thumbnail{
+    width:50%;
+    margin-bottom: 20px;
+}
+
+.layout_inner{
+    width:57%;
+    display: flex;
+}
+.layout_inner #list_item3{width:35%}
+.layout_inner #list_item4{width:45%}
+
+#list_content.on .layout_inner{
+    width:100%;
+    display: block;
+}
+#list_content.on .layout_inner #list_item3{
+    float:left; width:auto;
+}
+#list_content.on .layout_inner #list_item4,
+#list_content.on .layout_inner #list_item5{
+    float:right; width:auto; margin-left: 30px;
+}

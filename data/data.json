@@ -1,0 +1,18 @@
+{
+    "business" : [
+        {
+            "img": "./images/business01.jpg",
+            "imgAlt" : "해양풍력발전",
+            "heading" : "해양사업",
+            "content" : "삼성중공업은 세계 최다 건조실적을 보유하고 있습니다. 또한 고도의 안정성과 기술력을 필요로 하는 해양개발설비 시장에서도 세계 주요 오일 메이저 기업들로부터 인정을 받고 있습니다.",
+            "link" : "./sub2/sub2_1.html#sea"            
+        },
+        {
+            "img": "./images/business02.jpg",
+            "imgAlt" : "Lng ship",
+            "heading" : "조선사업",
+            "content" : "국내 최초로 LNG를 연료로 사용해 운항<br>중 발생하는 질소산화물과 황산화물 배출량을 각각 90% 이상 감축시킨 친환경 여객선을 개발하는 등 친환경 기술<br>연구에도 앞장서고 있습니다.",
+            "link" : "./sub2/sub2_1.html#ship"
+        }
+    ]
+}

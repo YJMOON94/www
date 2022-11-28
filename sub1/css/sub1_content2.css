@@ -1,0 +1,101 @@
+.conTop ul{
+    position: relative;
+}
+.conTop li{
+    overflow: hidden;
+    padding:50px;
+    margin-bottom: 100px;
+    position: relative;
+    transition: all .5s ease-out;
+}
+.conTop li:nth-child(1), .conTop li:nth-child(3){
+    left:-20%;
+    opacity: 0;
+}
+.conTop li:nth-child(2){
+    left: 20%;
+    opacity: 0;
+}
+.conTop li img{
+    float:left;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.3);
+}
+.conTop dl{
+    width:600px;
+    float:right;
+    margin-top: 30px;
+}
+.conTop dt{
+    font-size: 1.875em;
+    padding-bottom: 50px;
+    color:#039
+}
+.conTop dd{
+    font-size: 1.250em;
+    text-align: justify;
+    line-height: 2em;
+}
+.conTop li:nth-of-type(2) img{
+    float:right;
+    box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+}
+.conTop li:nth-of-type(2) dl{
+    float:left
+}
+.conBtm{
+    margin-bottom: 100px;
+    position: relative;
+    top:100px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+.conBtm ul{
+    overflow:hidden
+}
+.conBtm li{
+    float:left;
+    position: relative;
+}
+.conBtm li:hover .text{
+    opacity: 1;
+    top:0px;
+    left:0px;
+}
+.conBtm li .text{
+    background: rgba(0,0,0,.3);
+    position: absolute;
+    transition: all .3s ease-out;
+    top:50px;
+    left:0;
+    opacity: 0;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.25em;
+    font-weight: 500;
+    color:#fff;
+    padding:0 30px;
+    height:1000px;
+}
+.conBtm h3{
+    margin-top: 150px;
+    font-size: 2em;
+    text-align: center;
+}
+.conBtm p{
+    margin-top: 100px;
+}
+.conBtm dl{
+    overflow:hidden;
+}
+.conBtm li .text dt{
+    margin:50px 0 50px 0;
+    font-size: 1.4em;
+}
+.opacityLeftOn{
+    opacity: 1 !important;
+    left:0 !important;
+}
+.topOpacityOn{
+    top:0 !important;
+    opacity:1 !important;
+}

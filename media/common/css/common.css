@@ -1,0 +1,224 @@
+/* font */
+@font-face {
+    font-family: 'starcraft';
+    src: url(../../font/Starcraft\ Normal.ttf);
+}
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+    -webkit-text-size-adjust:none;  }
+    html{font-family:'starcraft'; font-size:16px; color:#fff;}
+    body {}
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+    ul, ol, dl { list-style:none; }
+    img, video {border:0; vertical-align:top; }
+    a, a:link {color:#fff;text-decoration:none; display: block; }
+    a:visited { color:#fff; }
+    a:active {color:#333;text-decoration:none; }
+    table { border-collapse:collapse; border-spacing:0; }
+    input, select { vertical-align:middle; }
+    label { cursor:pointer; }
+    .blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+    em,address { font-style:normal; font-weight:normal; }
+    p,li,dd{ line-height:1.5em}
+    .hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+        overflow: hidden; color: #fff;}
+    /* 와이드 PC 1280px~ */
+    
+    /* 헤더 공통 영역 */
+    #wrap{width:100%; overflow: hidden}
+    #headerArea{position:fixed; z-index: 30; height: 75px;
+        background: rgba(0,0,0,.3); left:0; top: 0;
+        width: 100%}	
+    #headerArea	.headerInner{width: 90%; margin: 0 5%;
+         overflow: hidden}
+    #headerArea h1{ float: left; margin-top: 2px}
+    #headerArea h1 a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 1px;
+        text-indent: -1000%;
+        background: url(../images/pngaaa.com-104156.png) no-repeat center center;
+        background-size:contain;
+        width:150px;
+        height:75px;
+    }	
+    #headerArea #gnb{float: right;margin-top: 25px}
+    #headerArea #gnb ul{overflow: hidden}
+    #headerArea #gnb ul li{float: left; margin-right: 15px;}
+    #headerArea #gnb ul li a{
+        background: linear-gradient(to right bottom, #19f6e8,#19f6e8,#fff,#19f6e8,#19f6e8);
+        -webkit-background-clip: text;
+        font-size: 1.563rem;
+        transition: all .3s;
+        color:#fff
+    }
+    #headerArea #gnb ul li a:hover{
+        background: linear-gradient(to right bottom, #19f6e8,#19f6e8,#fff,#19f6e8,#19f6e8);
+        -webkit-background-clip: text;
+        color:transparent;
+    }
+    #headerArea .gnbOC{
+        text-indent: -10000%;
+        width:50px;
+        height:50px;
+        position: absolute;
+        right:30px;
+        top:25px;
+        z-index: 80;
+    }
+    #headerArea .gnbOC span{
+        display: none;
+        width:50px;
+        height:3px;
+        background: #19f6e8;
+        position: absolute;
+        opacity: 1;
+        transition: background .3s;
+    }
+    #headerArea .gnbOC span::before{
+        content:'';
+        display: block;
+        position: absolute;
+        width:50px;
+        height:3px;
+        background: #19f6e8;
+        left:0;
+        top:-10px;
+        /* transform: rotate(45deg); */
+        transition: transform .3s;
+    }
+    #headerArea .gnbOC span::after{
+        content:'';
+        display: block;
+        position: absolute;
+        width:50px;
+        height:3px;
+        background: #19f6e8;
+        left:0;
+        top:10px;
+        /* transform: rotate(90deg); */
+        transition: transform .3s;
+    }
+    #headerArea .gnbOC.gnbOpen span::before{
+        top:0;
+        transform: rotate(45deg);
+    }
+    #headerArea .gnbOC.gnbOpen span::after{
+        top:0;
+        transform: rotate(-45deg);
+    }
+    /* 푸터 공통 영역 */
+    #footerArea{
+        width:100%;
+        margin-top: 100px;
+    }
+    .footerInner{
+        overflow: hidden;
+        background: #000;
+        text-align: center;
+        padding:0 5%;
+     }
+    .footerInner ul{
+        width:80%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footerInner ul li{
+        /* width:90%; */
+    }
+    .footerInner ul li img{
+        width:100%;
+    }
+    .footerInner p{
+        color:#999;
+        margin-bottom: 30px;
+    }
+    .topBtn{
+        text-indent: -10000%;
+        width:60px;
+        height:60px;
+        border-radius: 5px;
+        background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgba(177,235,246,1) 0%, #19f6e8 100%);
+        position: fixed;
+        bottom:20px;
+        right:20px;
+        z-index: 100;
+    }
+    .topBtn::after{
+        content:'';
+        display: block;
+        background: url(../images/scroll_icon.png) no-repeat;
+        background-size: cover;
+        width:60px;
+        height:60px;
+    }
+    /* 일반 pc */
+    @media screen and (max-width:1280px) {
+        #wrap{
+            /* width:1600px; */
+        }
+    }
+    
+    /* 테블릿 */
+    @media screen and (max-width:1024px) {
+        #headerArea h1{
+            float:none;
+        }
+        #headerArea h1 a{
+            margin:0 auto;
+        }
+        #headerArea #gnb{
+            margin-top:0;
+            float:none;
+            position: fixed;
+            width:100%;
+            height:100%;
+            left:0;
+            top:0;
+            text-align: center;
+            background: rgba(0,0,0,.85);
+            display: none;
+        }
+        #headerArea #gnb::after{
+            content:'';
+            display: block;
+            position: absolute;
+            width:250px;
+            height:105px;
+            background: url(../images/pngaaa.com-104156.png) no-repeat;
+            background-size: cover;
+            left:50%;
+            top:5%;
+            margin-left: -125px;
+        }
+        #headerArea #gnb ul{
+            margin-top: 200px;
+        }
+        #headerArea #gnb ul li{
+            float:none;
+        }
+        #headerArea #gnb ul li a{
+            padding:30px 0
+        }
+        #headerArea .gnbOC span{
+            display: block;
+        }
+    }
+    
+    /* 소형 테블릿 */
+    @media screen and (max-width:768px) {
+        
+    }
+    
+    /* 모바일 */
+    @media screen and (max-width:640px) {
+        
+    }
+    
+    /* 최소 사이즈 처리 */
+    @media screen and (max-width:480px) {
+        #wrap {
+            min-width:320px;}
+    }
+    

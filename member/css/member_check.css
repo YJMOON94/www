@@ -1,0 +1,136 @@
+body {
+    background: #f3f3f3;
+}
+.logo {
+    display: block;
+    width: 250px;
+    height: 50px;
+    margin:70px auto 50px;
+}
+.logo img{
+    width:100%;
+}
+#content {
+    width: 900px;
+    margin: 0 auto 100px;
+    padding: 100px;
+    box-shadow: 3px 3px 20px rgba(0,0,0,.3);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.member_tab {
+    padding: 30px 0;
+    border-top: 1px solid #333;
+}
+.member_tab a {
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 10px;
+    color: #aaa;
+}
+.member_tab a.on {
+    color: #333;
+    border-bottom: 2px solid #333;
+    font-weight: bold;
+}
+.member_tab span {
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.join {
+    text-align: left;
+    position: relative;
+}
+.join h4 {
+    font-size: 20px;
+    margin: 30px 0;
+    color: #333;
+    display: inline-block;
+}
+.join h4::after{
+    content:'( 필수 입력 사항 )';
+    display: inline-block;
+    margin-left: 10px;
+    color:#f00;
+    font-size: .8rem;
+    font-weight: 300;
+}
+.join h3 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+}
+.join .policy {
+    padding: 10px;
+    overflow-y: scroll;
+    height: 150px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.join .check {
+    color: #039;
+    margin: 20px 0 60px;
+}
+.join .button {
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.join .allcheck{
+    width:100%;
+}
+.join .button .ok,
+.join .button .cancel {
+    display: inline-block;
+    width: 50%;
+    border: none;
+    background: #039;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding:30px;
+}
+.join .button .cancel{
+    background: #999;
+}
+.join .allcheck {
+    color:#333;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.join .allcheck span{
+    display: block;
+    float:right;
+}
+input[type=checkbox] + label::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #999;
+    content: '';
+    margin: 0 15px -6px 0;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox] + label {
+    cursor: pointer;
+}
+input[type=checkbox]:checked + label::before {
+    background: #039 url("../images/checked_bg.png") center center no-repeat;
+    border: 1px solid #039;
+}

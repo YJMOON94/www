@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>메일전송</title>
+<style>
+   *{margin:0; padding:0}
+   ul{ list-style:none;}
+   
+   #mailAddress{width:80%; border:1px solid #ccc; border-radius:10px; margin:10px 5%;
+      padding:20px 5%}
+   #mailAddress li{ margin-bottom:15px}
+   #mailAddress input, textarea{width:90%; border-radius:5px; border:0; padding:10px 5%;
+         background:#F0F0F0}
+</style>
+</head>
+<body>
+
+  <div id="mailAddress">
+          <form action="mail.php" method="post">
+             <ul>
+              <li><input type="text" id="uname" name="uname" placeholder="Full name" required></li>
+              <li><input type="text" id="email" name="email" placeholder="E-mail address" required></li>
+              <li><input type="text" id="phone" name="phone" placeholder="Phone number" required></li>
+              <li><textarea name="message"  placeholder="Message" cols="50" rows="15" required></textarea></li>
+              <li><input type="submit" value="Send E-mail" class="submitBtn"></li>
+            </ul>
+          </form>
+  </div>
+                   
+</body>
+</html>

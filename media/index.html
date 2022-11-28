@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>starcraft2</title>
+<link rel="shortcut icon"  type="image/x-icon"  href="./common/images/starcraft.ico">
+<link rel="apple-touch-icon-precomposed" href="./common/images/starcraft2_logo.png">
+<link rel="apple-touch-startup-image" href="./common/images/starcraft2_logo.png">
+
+<link rel="stylesheet" href="./common/css/common.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/scroll.css">
+
+<script src="./common/js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+</script>
+</head>
+
+<body>
+   <div id="skipNav">
+	   <a href="#content">본문바로가기</a>
+	   <a href="#gnb">네비게이션바로가기</a>
+   </div>
+
+   <div id="wrap">
+	   
+	<header id="headerArea">
+		<div class="headerInner">
+			<h1><a href="./index.html">로고</a></h1>
+			<a href="#" class="gnbOC">
+				gnb open
+				<span></span></a>
+			<nav id="gnb">
+				<h2 class="hidden">네비게이션영역</h2> 
+				<ul>
+					<li><h3><a href="./sub/sub1.html">ABOUT</a></h3></li>
+					<li><h3><a href="./sub/sub2.html">STORY</a></h3></li>
+					<li><h3><a href="./sub/sub3.html">TRAILER</a></h3></li>
+					<li><h3><a href="./sub/sub4.html">GALLERY</a></h3></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="videoBox">
+			<video autoplay loop muted id="videoBG"></video>
+			<img src="./images/main640.webp" id="imgBG" alt="mainimage">
+			<!-- <div class="scrollDown">
+				<a href="#">아래로 스크롤</a>
+			</div> -->
+			<a class="down" href="#">
+				scroll down
+				<div class="mousey">
+					<div class="scroller"></div>
+				</div>
+			</a>
+	</div>
+			
+	<article id="content">
+		<h2 class="hidden">본문콘텐츠영역</h2>
+			<section class="about">
+				<h3><a href="./sub/sub1.html">ABOUT</a></h3>
+
+				<div class="terran">
+						<h4><a href="./sub/sub1.html">TERRAN</a></h4>
+					<div class="viewBox">
+						<a href="./sub/sub1.html" class="viewMore">
+							<span></span><span></span><span></span><span></span>
+							view more</a>
+					</div>
+
+					<ul class="grid">
+						<li>
+							<p>Resourceful humans with varied technology and plenty of attitude.
+								Relative newcomers to the Koprulu sector, the terrans are the descendants
+							</p>
+							<p>With neither the advanced technology versatile units to outwit their foes.</p>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>terran hero</p>
+								<h5>jim raynor</h5>
+								<span>"If you want to enlist, Son, that's your choice."
+								</span>
+							</div>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>terran Unit</p>
+								<h5>marine</h5>
+							</div>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>terran Unit</p>
+								<h5>marine-cat</h5>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="protoss">
+					<h4><a href="./sub/sub1.html">PROTOSS</a></h4>
+					<div class="viewBox">
+						<a href="./sub/sub1.html" class="viewMore">
+							<span></span><span></span><span></span><span></span>
+							view more</a>
+					</div>
+
+					<ul class="grid">
+						<li>
+							<p>
+								For thousands of years
+							</p>
+							<p>Ancient, noble warriors with a golden armada and advanced psionic technology.</p>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>protoss hero</p>
+								<h5>tesadar</h5>
+								<span>"My friends, this is our final hour."
+								</span>
+							</div>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>protoss Unit</p>
+								<h5>zelot</h5>
+							</div>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>protoss Unit</p>
+								<h5>Dragun</h5>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="zerg">
+					<h4><a href="./sub/sub1.html">ZERG</a></h4>
+					<div class="viewBox">
+						<a href="./sub/sub1.html" class="viewMore">
+							<span></span><span></span><span></span><span></span>
+							view more</a>
+					</div>
+
+					<ul class="grid">
+						<li>
+							<p>A ferocious swarm of merciless beasts that devour worlds.</p>
+							<p>The zerg make no use of technology to create their weapons, armor.</p>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>zerg hero</p>
+								<h5>sarah kerrigan</h5>
+								<span>"I am the Swarm. Worlds will burn"
+								</span>
+							</div>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>zerg Unit</p>
+								<h5>kerrigan</h5>
+							</div>
+						</li>
+						<li>
+							<div class="effect-jazz">
+								<div class="backColor"></div>
+								<p>zerg Unit</p>
+								<h5>overload</h5>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</section>
+
+			<section class="story">
+				<div class="slider" id="controlTarget"></div>
+				<div class="controler" id="controlBtn">
+					<span>drag me</span>
+				</div>
+				<h3><a href="./sub/sub2.html">STORY</a></h3>
+				<div class="viewBox">
+					<a href="./sub/sub1.html" class="viewMore">
+						<span></span><span></span><span></span><span></span>
+						view more</a>
+				</div>
+				<div class="zelot">
+					<img src="./images/story_zelot.png" alt="zelot">
+				</div>
+				<div class="textLR">
+					<ul>
+						<li>
+							<a href="#">
+								<dl>
+									<dt>Part 1: The Distant Past</dt>
+									<dd>The xel’naga called this the Infinite Cycle.</dd>
+								</dl>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<dl>
+									<dt>Part 2: StarCraft</dt>
+									<dd>human colony ships reach the distant Koprulu Sector.</dd>
+								</dl>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="textBtm">
+					<dl>
+						<dt>Part 3: Brood War</dt>
+						<dd>Kerrigan convinces her erstwhile allies to once again fight alongside her and joins forces with Raynor and Mengsk.</dd>
+					</dl>
+				</div>
+				<div class="dragshowL">
+					<dl>
+						<dt>zeratol</dt>
+						<dd><img src="./images/sword.png" alt=""></dd>
+						<dd><img src="./images/shield.png" alt=""></dd>
+						<dd><img src="./images/brain.png" alt=""></dd>
+					</dl>
+					<ul>
+						<li>
+							<div>
+								<img src="./images/story01.png" alt="">
+							</div>
+							<p>Their goal: wait for two species to achieve what the xel’naga called “purity of essence” and “purity of form,”</p>
+						</li>
+						<li>
+							<div>
+								<img src="./images/story02.png" alt="">
+							</div>
+							<p>The xel’naga called this the Infinite Cycle. Unfortunately, that turned out to be a bit of a misnomer.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="dragshowR">
+					<ul class="left">
+						<li>
+							<div>
+								<img src="./images/story03.png" alt="">
+							</div>
+							<p>The terrans establish colonies, several political factions emerge, and, in true human fashion</p>
+						</li>
+						<li>
+							<div>
+								<img src="./images/story04.png" alt="">
+							</div>
+							<p>everyone goes to war almost immediately. When the colony world Korhal IV rebels against the Terran Confederacy and declares its independence</p>
+						</li>
+					</ul>
+					<ul class="right">
+						<li>
+							<div>
+								<img src="./images/story05.png" alt="">
+							</div>
+							<p>the Confederacy destroys the planet via nuclear bombardment</p>
+						</li>
+						<li>
+							<div>
+								<img src="./images/story06.png" alt="">
+							</div>
+							<p>This atrocity leads to the rise of the Sons of Korhal, a group of freedom fighters led by Arcturus Mengsk.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="trailer">
+				<h3><a href="./sub/sub3.html">TRAILER</a></h3>
+				<div class="content">
+					<div class="textBox">
+						<a href="#"></a>
+						<dl>
+							<dt>Heart of the Swarm</dt>
+							<dd>Valerian sequesters Kerrigan at a secret research facility to study the Keystone’s effects on her. </dd>
+							<dd>When Dominion forces storm the facility, Kerrigan escapes on her own. Vowing revenge against Mengsk, Kerrigan begins to rebuild her brood when Zeratul tracks her down, informing her of an ancient xel’naga prophecy that predicts Kerrigan being remade as a primal zerg. by killing Arcturus Mengsk and leads her zerg swarm away to prepare for the inevitable showdown with Amon.</dd>
+						</dl>
+						<div class="viewBox">
+							<a href="./sub/sub1.html" class="viewMore">
+								<span></span><span></span><span></span><span></span>
+								view more</a>
+						</div>
+					</div>
+					<span class="img1 img"><a class="youtube" href="./sub/sub3.html"><img src="./images/yotube_icon.png" alt="youtube"></a></span>
+					<span class="img2 img"><a class="youtube" href="./sub/sub3.html"><img src="./images/yotube_icon.png" alt="youtube"></a></span>
+					<span class="img3 img"><a class="youtube" href="./sub/sub3.html"><img src="./images/yotube_icon.png" alt="youtube"></a></span>
+					<span class="img4 img"><a class="youtube" href="./sub/sub3.html"><img src="./images/yotube_icon.png" alt="youtube"></a></span>
+				</div>
+			</section>
+			<section class="gallery">
+				<h3><a href="./sub/sub4.html">GALLERY</a></h3>
+				<p>This atrocity leads to the rise of the Sons of Korhal, a group of freedom fighters led by Arcturus Mengsk.</p>
+				<div class="viewBox">
+					<a href="./sub/sub1.html" class="viewMore">
+						<span></span><span></span><span></span><span></span>
+						view more</a>
+				</div>
+				<div class="galleryInner">
+					<ul>
+						<li>
+							<img src="./images/gallery01.png" alt="갤러리이미지">
+							<dl>
+								<dt><i class="fa-solid fa-image-portrait"></i> protoss</dt>
+								<dd>zelot fight</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="./images/gallery02.png" alt="갤러리이미지">
+							<dl>
+								<dt><i class="fa-solid fa-image-portrait"></i> heros</dt>
+								<dd>zerg protoss terran</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="./images/gallery03.png" alt="갤러리이미지">
+							<dl>
+								<dt><i class="fa-solid fa-image-portrait"></i> units</dt>
+								<dd>sarah kerrigan</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="./images/gallery04.png" alt="갤러리이미지">
+							<dl>
+								<dt><i class="fa-solid fa-image-portrait"></i> war</dt>
+								<dd>zerg vs TP</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="./images/gallery05.png" alt="갤러리이미지">
+							<dl>
+								<dt><i class="fa-solid fa-image-portrait"></i> home</dt>
+								<dd>protoss planet</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="./images/gallery06.png" alt="갤러리이미지">
+							<dl>
+								<dt><i class="fa-solid fa-image-portrait"></i> icon</dt>
+								<dd>protoss icon</dd>
+							</dl>
+						</li>
+						<li>
+							<img src="./images/gallery07.png" alt="갤러리이미지">
+							<dl>
+								<dt><i class="fa-solid fa-image-portrait"></i> home</dt>
+								<dd>terran planet</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+			</section>
+	</article>
+	
+	<footer id="footerArea">
+	    <div class="footerInner">
+			<ul>
+				<li><img src="./common/images/blizzard.png" alt="blizard"></li>
+				<li><img src="./common/images/pngaaa.com-104156.png" alt="logo"></li>
+			</ul>
+			<p>&copy;2022 Blizzard Entertainment, Inc. 모든 권리는 Blizzard Entertainment에 있습니다.
+				여기서 언급된 다른 모든  상표 는 각 소유권자들의 자산입니다.</p>
+		</div>
+		<a class="topBtn" href="#"><span class="hidden">move to top</span></a>
+	</footer>
+</div>		
+
+
+<script src="./common/js/jquery-1.12.4.min.js"></script>
+<script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="./common/js/nav.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/drag.js"></script>
+<script src="./js/scroll.js"></script>
+</body>
+</html>

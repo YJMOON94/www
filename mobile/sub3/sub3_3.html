@@ -1,0 +1,110 @@
+<? session_start() ?>
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<title>기술개발-연구소소개</title>
+
+<link rel="apple-touch-icon-precomposed" href="../common/images/app_icon.png">
+<link rel="apple-touch-startup-image" href="../common/images/startup.png">
+<link rel="stylesheet" href="../common/css/common.css">
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/sub3_3.css">
+
+<script src="../common/js/prefixfree.min.js"></script>
+<script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
+<script>
+
+  try {
+   window.addEventListener('load', function(){
+    setTimeout(scrollTo, 0, 0, 1); 
+   }, false);
+  } 
+  catch(e) {}
+
+ </script>
+</head>
+
+<body>
+
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+      <h2>기술개발</h2>
+    </div>
+    <div class="subnav">
+      <a href="#">연구소소개<span><i class="fa-solid fa-caret-down"></i></span></a>
+      <ul>
+          <li><a href="./sub3_1.html">신공법</a></li>
+          <li><a href="./sub3_2.html">신기술</a></li>
+      </ul>
+    </div>
+    <article id="content"> 
+        <div class="titleArea">
+          <h2>연구소소개</h2>
+          <dl>
+              <dt>조선해양연구소로 하나된 기술력</dt>
+              <dd>1984년 기본설계부의 개발팀으로 출발한 연구소는 선박해양연구소, 생산기술연구소, 산업기술연구소, 중앙연구소 등의 명칭을 거쳐 2022년 조선해양연구소로 기능을 통합하여 운영하고 있습니다</dd>
+          </dl>
+        </div> 
+        <div class="contentArea">
+          <div class="conTop">
+            <div class="whiteCircle">
+              <ul>
+                <li>Developed</li>
+                <li>2022</li>
+              </ul>
+            </div>
+          </div>
+          <div class="conBtm">
+            <ul>
+              <li>
+                <a href="#" class="popBtn">
+                  <span></span>
+                  <div>
+                      <h3>선박해양연구</h3>
+                      <p>예인수조</p>
+                      <p>공동수조</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="popBtn">
+                  <span></span>
+                    <div>
+                      <h3>생산기술연구</h3>
+                      <p>Battery System</p>
+                      <p>모형 제작</p>
+                    </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="popBtn">
+                  <span></span>
+                    <div>
+                      <h3>에너지플랜트</h3>
+                      <p>KDLAS 시공승인</p>
+                    </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="pop">
+            <a href="#" class="popClose"><i class="fa-solid fa-xmark"></i></a>
+            <div class="popCon">
+    
+            </div>
+          </div>
+    </article>
+
+
+    <? include "../common/sub_footer.html" ?>
+
+  </div>
+
+<script src="./js/pop3.js"></script>
+</body>
+</html>
