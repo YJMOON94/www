@@ -18,6 +18,20 @@
                 //id 중복검사
                 $("#id").keyup(function () { // id입력 상자에 id값 입력시
                     let id = $('#id').val(); //aaa
+                    
+                    const ONLY_ENGLISH = /^[a-zA-Z]*$/;
+
+                    if (!ONLY_ENGLISH.test(document.member_form.id.value)) {
+
+                        $('#loadtext').html("<span>아이디는 영문만 입력 가능합니다</span>");
+                        $('#id_check').css({background : "rgba(255,0,0,.2)"});
+
+                        document
+                            .member_form
+                            .id
+                            .focus();
+                        return;
+                    };
 
                     $.ajax({
                         type: "POST",
@@ -28,6 +42,8 @@
                             $("#loadtext").html(data);
                         }
                     });
+
+
                 });
 
                 //nick 중복검사
@@ -45,15 +61,18 @@
                     });
                 });
 
-                $('#pass, #pass_confirm').keyup(function(){
+                $('#pass, #pass_confirm').keyup(function () {
                     if (document.member_form.pass_confirm.value != document.member_form.pass.value || !document.member_form.pass_confirm.value || !document.member_form.pass.value) {
                         $('#loadtext3')
-                        .css('color', '#f00')
-                        .text('비밀번호가 일치하지 않습니다');
+                            .css('color', '#f00')
+                            .text('비밀번호가 일치하지 않습니다');
                         $('.pass_check').css({background: "rgba(255,0,0,.2)"});
                         $('.pass_confirm').css({background: "rgba(255,0,0,.2)"});
                     } else {
-                        console.log(document.member_form.pass_confirm.value,document.member_form.pass.value);
+                        console.log(
+                            document.member_form.pass_confirm.value,
+                            document.member_form.pass.value
+                        );
                         $('#loadtext3')
                             .css('color', '#039')
                             .text('비밀번호가 일치합니다');
@@ -62,7 +81,38 @@
                     }
                 })
 
+                const ONLY_ENGANDKOR = /^[가-힣a-zA-Z]+$/;
+                $('#name').keyup(function(){
+                    if(!ONLY_ENGANDKOR.test(document.member_form.name.value)){
+                        $('#loadtext4').html("<span>영문과 한글만 입력 가능합니다</span>");
+                        $('.name_check').css({background : "rgba(255,0,0,.2)", color:"#f00"});
+                    }else{
+                        $('#loadtext4').html("<span>확인되었습니다</span>");
+                        $('.name_check').css({background : "rgba(00,100,255,.2)",color:"#039"});
+                    }
+                });
+
+                const ONLY_NUMBER = /^[0-9]+$/ ;
+                $('#hp2').keyup(function(){
+                    if(!ONLY_NUMBER.test(document.member_form.hp2.value)){
+                        $('#loadtext5').html("<span>숫자만 입력 가능합니다</span>");
+                        $('.phone_check').css({background : "rgba(255,0,0,.2)", color:"#f00"});
+                    }else{
+                        $('#loadtext5').html("<span>확인되었습니다</span>");
+                        $('.phone_check').css({background : "rgba(00,100,255,.2)",color:"#039"});
+                    }
+                });
+                $('#hp3').keyup(function(){
+                    if(!ONLY_NUMBER.test(document.member_form.hp3.value)){
+                        $('#loadtext5').html("<span>숫자만 입력 가능합니다</span>");
+                        $('.phone_check').css({background : "rgba(255,0,0,.2)", color:"#f00"});
+                    }else{
+                        $('#loadtext5').html("<span>확인되었습니다</span>");
+                        $('.phone_check').css({background : "rgba(00,100,255,.2)",color:"#039"});
+                    }
+                });
             });
+
         </script>
         <script>
 
@@ -87,6 +137,15 @@
 
                 if (!document.member_form.pass_confirm.value) {
                     alert("비밀번호확인을 입력하세요");
+                    document
+                        .member_form
+                        .pass_confirm
+                        .focus();
+                    return;
+                }
+
+                if(document.member_form.pass_confirm.value != document.member_form.pass.value){
+                    alert("비밀번호가 일치하지 않습니다");
                     document
                         .member_form
                         .pass_confirm
@@ -138,7 +197,7 @@
                     .member_form
                     .submit();
                 // insert.php 로 변수 전송
-                
+
             }
 
             function reset_form() {
@@ -175,7 +234,13 @@
                             <label for="id">아이디</label>
                         </dt>
                         <dd>
-                            <input type="text" name="id" id="id" required="required" placeholder="아이디를 입력하세요">
+                            <input
+                                type="text"
+                                name="id"
+                                id="id"
+                                maxlength="8"
+                                required="required"
+                                placeholder="아이디를 입력하세요">
                             <span id="loadtext"></span>
                         </dd>
                     </dl>
@@ -184,7 +249,12 @@
                             <label for="pass">비밀번호</label>
                         </dt>
                         <dd>
-                            <input type="password" name="pass" id="pass" required="required" placeholder="비밀번호를 입력하세요">
+                            <input
+                                type="password"
+                                name="pass"
+                                id="pass"
+                                required="required"
+                                placeholder="비밀번호를 입력하세요">
                             <span id="loadtext3"></span>
                         </dd>
                     </dl>
@@ -207,7 +277,13 @@
                             <label for="name">이름</label>
                         </dt>
                         <dd>
-                            <input type="text" name="name" id="name" required="required" placeholder="이름을 입력하세요">
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                required="required"
+                                placeholder="이름을 입력하세요">
+                                <span id="loadtext4"></span>
                         </dd>
                     </dl>
                     <dl class="nickname_check">
@@ -215,11 +291,16 @@
                             <label for="nick">닉네임</label>
                         </dt>
                         <dd>
-                            <input type="text" name="nick" id="nick" required="required" placeholder="닉네임을 입력하세요">
+                            <input
+                                type="text"
+                                name="nick"
+                                id="nick"
+                                required="required"
+                                placeholder="닉네임을 입력하세요">
                             <span id="loadtext2"></span>
                         </dd>
                     </dl>
-                    <dl class="flexBox" class="phone_check">
+                    <dl class="phone_check">
                         <dt>
                             휴대폰
                         </dt>
@@ -234,21 +315,46 @@
                                 <option value='019'>019</option>
                             </select>
                             <span>-</span>
-                            <label class="hidden" for="hp2"></label><input type="text" class="hp" name="hp2" id="hp2" required="required" placeholder="1234">
+                            <label class="hidden" for="hp2"></label><input
+                                type="text"
+                                class="hp"
+                                name="hp2"
+                                id="hp2"
+                                maxlength="4"
+                                required="required"
+                                placeholder="1234">
                             <span>-</span>
-                            <label class="hidden" for="hp3"></label><input type="text" class="hp" name="hp3" id="hp3" required="required" placeholder="1234">
+                            <label class="hidden" for="hp3"></label><input
+                                type="text"
+                                class="hp"
+                                name="hp3"
+                                id="hp3"
+                                maxlength="4"
+                                required="required"
+                                placeholder="1234">
+                            <span id="loadtext5"></span>
                         </dd>
                     </dl>
-                    <dl class="flexBox" class="email_check">
+                    <dl class="email_check">
                         <dt>
                             이메일
                         </dt>
                         <dd>
                             <label class="hidden" for="email1"></label>
-                            <input type="text" id="email1" name="email1" required="required" placeholder="email">
+                            <input
+                                type="text"
+                                id="email1"
+                                name="email1"
+                                required="required"
+                                placeholder="email">
                             <span>@</span>
                             <label class="hidden" for="email2"></label>
-                            <input type="text" name="email2" id="email2" required="required" placeholder="naver.com">
+                            <input
+                                type="text"
+                                name="email2"
+                                id="email2"
+                                required="required"
+                                placeholder="naver.com">
                         </dd>
                     </dl>
                     <div class="signUp">

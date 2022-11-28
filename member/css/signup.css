@@ -50,14 +50,14 @@ dd{
     font-size: 1.125rem;
     position: relative;
 }
-dd #loadtext, dd #loadtext2, dd #loadtext3{
+dd #loadtext, dd #loadtext2, dd #loadtext3,dd #loadtext4,dd #loadtext5{
     position: absolute;
     right:20px;
     bottom:32px;
     font-size: 1rem;
 }
 dd input{
-    width:100%;
+    width:45%;
     font-size: 1.25rem;
     height:80px;
     padding-left: 20px;
@@ -66,7 +66,7 @@ dd input{
 .flexBox dd{
     display: flex;
 }
-dd .hp{
+body dd .hp{
     font-size: 1.25rem;
     text-align: left;
     padding:5px 20px 5px 2px;
@@ -74,6 +74,8 @@ dd .hp{
     height:50px;
     margin-top: 15px;
     margin-right: 20px;
+    width:25%;
+    background: transparent
 }
 .flexBox span{
     line-height: 75px;
