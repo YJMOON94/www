@@ -15,15 +15,16 @@
 }
 #ripple #ripple_writer_title ul li {
     float: left;
-    margin: 0 0 30px 50px;
+    margin: 0 0 30px 20px;
 }
 #ripple #ripple_writer_title #ripple_content {
-    padding: 0 0 30px 50px;
+    padding: 0 0 30px 0;
     overflow: hidden;
 }
 #ripple #ripple_writer_title #ripple_content span{
-    display: block;
-    clear:both
+    display: inline-block;
+    clear:both;
+    margin-left: 20px;
 }
 #ripple #ripple_writer_title #ripple_content form{
     display: block;
@@ -37,7 +38,7 @@
     float:left;
 }
 #ripple #ripple_writer_title #ripple_content input{
-    width:10%;
+    width:20%;
     height:100px;
     color:#fff;
     background: rgb(6,14,131);
@@ -59,9 +60,9 @@
 #ripple #ripple_writer_title #writer_title3 a {
     font-size: 0.9rem;
     color: #f00;
-    margin-top: 10px;
+    margin: 10px 0 0 5px;
     display: inline-block;
-    margin-left: 30px;
+    /* margin-left: 5%; */
 }
 
 #ripple_box {
@@ -73,17 +74,17 @@
 }
 #ripple_box #ripple_box2 {
     float: left;
-    width: 90%;
+    width: 80%;
 }
 #ripple_box #ripple_box2 textarea {
     width: 100%;
     height: 100px;
     box-sizing: border-box;
-    padding:30px;
+    padding:10px;
 }
 #ripple_box #ripple_box3 {
     float: left;
-    width: 10%;
+    width: 20%;
 }
 #ripple_box #ripple_box3 a {
     width: 100%;

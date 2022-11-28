@@ -87,9 +87,6 @@
         </div>
         <article id="content">
             <div class="titleArea">
-                <div class="lineMap">
-                    <span>home</span>&gt;<span>고객센터</span>&gt;<strong>자료실</strong>
-                </div>
                 <h2>뉴스</h2>
                 <dl>
                     <dt>조선강국 코리아! 그 명성을 이어갈 주역을 찾습니다.</dt>
@@ -128,14 +125,14 @@
                             </div>
 
                             <div id="list_count2">
-                                <div class="layout_change">
+                                <!-- <div class="layout_change">
                                     <a
                                         href="./list.php?scale=<?=$scale?>&page=<?=$page?>&liststyle=list"
                                         class="layout_change_1"></a>
                                     <a
                                         href="./list.php?scale=<?=$scale?>&page=<?=$page?>&liststyle=box"
                                         class="layout_change_2"></a>
-                                </div>
+                                </div> -->
                                 <label for="scale" class="hidden">리스트개수</label>
                                 <select
                                     id="scale"
@@ -149,13 +146,13 @@
                             </div>
                         </div>
 
-                        <div id="list_content">
+                        <div id="list_content" class="on">
                             <div id="list_top_title">
                                 <ul>
                                     <li id="list_title1">번호</li>
                                     <li id="list_title2">제목</li>
                                     <li id="list_title3">글쓴이</li>
-                                    <li id="list_title4">등록일</li>
+                                    <!-- <li id="list_title4">등록일</li> -->
                                     <li id="list_title5">조회</li>
                                 </ul>
                             </div>
@@ -196,9 +193,9 @@
                                 </div>
                                 <div class="layout_inner">
                                     <div id="list_item3"><?= $item_nick ?></div>
-                                    <div id="list_item4">
+                                    <!-- <div id="list_item4">
                                         <i class="fa-regular fa-calendar-days"></i>
-                                        <?= $item_date ?></div>
+                                        <?= $item_date ?></div> -->
                                     <div id="list_item5">
                                         <i class="fa-solid fa-eye"></i>
                                         <?= $item_hit ?></div>
@@ -253,26 +250,22 @@ if($userid)
         </article>
         <!-- end of wrap -->
         <? include "../common/sub_footer.html" ?>
-
-        <script src="../common/js/jquery-1.12.4.min.js"></script>
-        <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
-        <script src="../common/js/fullnav.js"></script>
     <?
         if(!$liststyle){
-            $liststyle = 'list';
-            echo"
-            <script>
-                document.querySelector('#list_content').classList.remove('on');              
-            </script>
-            ";
+            //$liststyle = 'list';
+            //echo"
+            // <script>
+            //     document.querySelector('#list_content').classList.remove('on');              
+            // </script>
+            //";
 
         }else if($liststyle == 'box'){
-            $liststyle = 'box';
-            echo"
-            <script>
-                    document.querySelector('#list_content').classList.add('on');    
-            </script>
-            ";
+            //$liststyle = 'box';
+            //echo"
+            // <script>
+            //         document.querySelector('#list_content').classList.add('on');    
+            // </script>
+            //";
         }
         ?>
 

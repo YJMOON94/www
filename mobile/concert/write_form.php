@@ -32,8 +32,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="../common/css/common.css">
-        <link rel="stylesheet" href="../sub6/common/css/sub6common.css">
-        <link rel="stylesheet" href="../greet/css/write.css">
+        <link rel="stylesheet" href="../sub4/css/common.css">
+        <link rel="stylesheet" href="./css/write.css">
 
         <script src="../common/js/prefixfree.min.js"></script>
         <script src="https://kit.fontawesome.com/8bd50518e5.js" crossorigin="anonymous"></script>
@@ -69,31 +69,21 @@
         <? include "../common/sub_header.html" ?>
 
         <div class="main">
-            <img src="../sub6/common/images/main.jpg" alt="">
-            <h3>자료실</h3>
+            <h2>고객센터</h2>
         </div>
-        <div class="subNav">
+        <div class="subnav">
+            <a href="#">뉴스<span>
+                    <i class="fa-solid fa-caret-down"></i></span></a>
             <ul>
                 <li>
-                    <a class="current" href="#">뉴스</a>
-                </li>
-                <li>
-                    <a href="../greet/list.php">자료실</a>
-                </li>
-                <li>
-                    <a href="../sub6/sub6_3.html">QnA</a>
-                </li>
-                <li>
-                    <a href="../sub6/sub6_4.html">일정</a>
+                    <a href="../sub4/sub4_2.html">일정</a>
+                    <a href="../concert/list.php">뉴스</a>
                 </li>
             </ul>
         </div>
         <article id="content">
-            <div class="titleArea">
-                <div class="lineMap">
-                    <span>home</span>&gt;<span>고객센터</span>&gt;<strong>자료실</strong>
-                </div>
-                <h2>자료실</h2>
+        <div class="titleArea">
+                <h2>뉴스</h2>
                 <dl>
                     <dt>조선강국 코리아! 그 명성을 이어갈 주역을 찾습니다.</dt>
                     <dd>자체기술력과 생산능력으로 세계1위 생산량의 거의 모두를 수출하는 딜러박스 세계최고 수준의 인력과 실비 모두 대한민국의 오늘입니다.</dd>
